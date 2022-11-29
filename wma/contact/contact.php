@@ -26,7 +26,7 @@
                 <!-- NAVIGATION BAR - HOVER BUTTONS -->
                 <div class="dropdown">
                     <button class="dropbtn">
-                        About Us
+                        About Us WOW
                     </button>
                     <div class="dropdown-content">
                         <a href="../company/company.php">
