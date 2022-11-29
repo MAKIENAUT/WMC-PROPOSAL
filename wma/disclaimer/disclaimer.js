@@ -1,6 +1,8 @@
-function copyToClipboard() {
-  navigator.clipboard.writeText
-      ("admin@westmigrationagency.us");
-
-  alert("Admin Email Address copied to clipboard: \n admin@westmigrationagency.us" )
+function myFunction() {
+  var x = document.getElementById("myNavBar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
 }
