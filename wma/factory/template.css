@@ -2,7 +2,7 @@ body {
    margin: 0;
    padding: 0;
    width: 100%;
-   height: 300px;
+   height:fit-content;
 }
 
 /* NAVIGATION BAR -START- */
@@ -11,7 +11,7 @@ body {
    height: 60px;
    background-size: cover;
    background-position-y: -100px;
-   background-image: url(/photos/silk.jpg);
+   background-image: url(/wma/photos/silk.jpg);
    
    top: 0;
    left: 0;
@@ -43,7 +43,6 @@ body {
          .nav_logo img {
             width: 90%;
          }
-
          .nav_logo:hover {
             opacity: 2;
             border-radius: 15px;
@@ -188,26 +187,18 @@ body {
 /* NAVIGATION BAR -END- */
 
 
-main {
-   width: 100%;
-   height: 500px;
-   background-color: black;
-}
-
-
 /* FOOTER BAR -START- */
 footer {
-   bottom: 0;
+
    clear: both;
    width: 100%;
    height: 200px;
-   position: absolute;
    outline-offset: 3px;
    outline: 1px solid goldenrod;
    border-top: 2px solid rgb(48, 93, 98);
    background-size: cover;
    background-position-y: -100px;
-   background-image: url(/photos/silk.jpg);
+   background-image: url(/wma/photos/silk.jpg);
 }
    .footer_container {
       width: 100%;
@@ -216,7 +207,6 @@ footer {
       gap: 0;
       display: flex;
       align-items: center;
-      
    }
       .logo_container {
          width: 30%;
@@ -245,7 +235,6 @@ footer {
             color: rgb(48, 93, 98);
             font-family: "Montserrat", sans-serif;
          }
-
       .about_links {
          width: 15%;
          height: 75%;
