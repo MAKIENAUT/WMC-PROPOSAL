@@ -2,7 +2,6 @@ body {
    margin: 0;
    padding: 0;
    width: 100%;
-   height:fit-content;
 }
 
 /* NAVIGATION BAR -START- */
@@ -183,19 +182,20 @@ body {
          display: flex;
       }
    }
-
 /* NAVIGATION BAR -END- */
+
+
 
 
 /* FOOTER BAR -START- */
 footer {
-
    clear: both;
    width: 100%;
    height: 200px;
    outline-offset: 3px;
    outline: 1px solid goldenrod;
    border-top: 2px solid rgb(48, 93, 98);
+   
    background-size: cover;
    background-position-y: -100px;
    background-image: url(/wma/photos/silk.jpg);
@@ -343,5 +343,4 @@ footer {
             .contact_info p:hover {
                text-decoration: underline;
             }
-
 /* FOOTER BAR -END- */
