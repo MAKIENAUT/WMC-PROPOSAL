@@ -185,16 +185,129 @@ body {
 
 /* SECTION DESIGN START */
 section{
+   padding: 0;
    width: 100%;
-   height: 500px;
+   height: fit-content;
    margin-top: 60px;
-   margin-bottom: px;
-   background-color: cadetblue;
+   margin-bottom: 2px;
 }
    .section_container {
       width: 100%;
-      height: inherit;
+      height: fit-content;
    }
+      .title_image {
+         width: 100%;
+         height: 300px;
+         position: relative;
+      }
+         .title_image img {
+            opacity: .8;
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+            position: absolute;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .title_image h1 {
+            width: 95%;
+            margin: 0;
+            font-size: 45px;
+            height: inherit;
+            letter-spacing: 5px;
+            color: rgb(18, 64, 71);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            position: absolute;
+            
+            display: flex;
+            align-items: center;
+            justify-content: end;
+         }
+      .consultation_content {
+         width: 100%;
+         height: fit-content;
+      }
+         .content {
+            width: 100%;
+            height: 300px;
+            border: 1px solid red;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+         }
+            .content_title {
+               width: 90%;
+               height: 50px;
+               padding: 10px 0;
+
+               display: flex;
+               align-items: center;
+               justify-content: start;
+            }
+               .content_title h2 {
+                  width: 100%;
+                  margin: 0;
+                  font-size: 35px;
+                  word-spacing: 10px;
+                  letter-spacing: 3px;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: start;
+               }
+            .content_description {
+               width: 90%;
+            }
+               .content_description p {
+                  font-size: 20px;
+               }
+         .how_to_content {
+            width: 100%;
+            height: 600px;
+
+            gap: 10px;
+            display: flex;
+            justify-content: center;
+         }
+            .steps_left{
+               width: 10%;
+               border: 1px solid gold;
+
+               display: flex;
+               align-items: center;
+               flex-direction: column;
+               justify-content: space-between;
+            }
+               .numbers_left {
+                  width: 50px;
+                  height: 50px;
+                  border: 1px solid teal;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+               }
+            .steps_mid{
+               width: 40%;
+               border: 1px solid gold;
+
+               display: flex;
+               justify-content: center;
+            }
+            .steps_right{
+               width: 10%;
+               border: 1px solid gold;
+
+               display: flex;
+               justify-content: center;
+            }
+
 /* SECTION DESIGN END */
 
 /* FOOTER BAR -START- */
