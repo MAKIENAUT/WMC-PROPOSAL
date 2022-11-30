@@ -270,17 +270,17 @@ body {
   margin: 60px 0 0;
   /* gap: 20px; */
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  border-top: 1px solid gold;
-  border-bottom: 1px solid gold;
+  flex-flow: column nowrap;
+  /* justify-content: space-between; */
 }
 .specializ_header {
   height: 75px;
-  width: 100%;
+  /* width: 100%; */
   padding: 0 50px 0;
   display: flex;
   align-items: center;
+  border-top: 1px solid gold;
+  border-bottom: 1px solid gold;
   /* background-color: bisque; */
 }
 .specializ_header h2 {
@@ -311,6 +311,40 @@ body {
 }
 .specializ_buttons button:hover {
   background-color: rgba(255, 217, 0, 0.26);
+}
+.specializ_body {
+  padding: 0 50px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  /* align-items: center; */
+}
+.specializ_content {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.content_header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid gold;
+}
+.content_header h2 {
+  font-size: 35px;
+  font-weight: 400;
+  margin: 0;
+  /* margin: 0 0 20px; */
+  margin-right: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.content_body {
+  margin: 40px 0;
+}
+.content_body p {
+  font-size: 20px;
+  line-height: 1.75rem;
+  margin: 0;
+  /* font-weight: 400; */
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 /* CONTENT -END- */
 
