@@ -233,7 +233,6 @@ section{
          .content {
             width: 100%;
             height: 300px;
-            border: 1px solid red;
 
             display: flex;
             align-items: center;
@@ -269,44 +268,93 @@ section{
                }
          .how_to_content {
             width: 100%;
-            height: 600px;
+            height: fit-content;
+            background-size: cover;
+            background-image: url('../photos/ladder.jpg');
 
             gap: 10px;
             display: flex;
-            justify-content: center;
+            justify-content: start;
          }
-            .steps_left{
-               width: 10%;
-               border: 1px solid gold;
+            .steps_container {
+               width: 60%;
+               margin-left: 50px;
+               padding: 10px 15px;
 
+               gap: 20px;
                display: flex;
                align-items: center;
                flex-direction: column;
-               justify-content: space-between;
+               justify-content: space-evenly;
             }
-               .numbers_left {
-                  width: 50px;
-                  height: 50px;
-                  border: 1px solid teal;
-
+               .steps_odd {
+                  width: 100%;
+                  display: flex;
+                  
+                  gap: 15px;
                   display: flex;
                   align-items: center;
-                  justify-content: center;
                }
-            .steps_mid{
-               width: 40%;
-               border: 1px solid gold;
+                  .steps_odd h1 {
+                     margin: 0;
+                     width: 50px;
+                     height: 50px;
+                     color: white;
+                     font-size: 30px;
+                     border-radius: 5px;
+                     background-color: rgb(227, 175, 45, 0.8);
 
-               display: flex;
-               justify-content: center;
-            }
-            .steps_right{
-               width: 10%;
-               border: 1px solid gold;
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                  .steps_odd p {
+                     margin: 0;
+                     width: 70%;
+                     color: white;
+                     font-size: 20px;
+                     padding: 10px 15px;
+                     border-radius: 10px;
+                     border-left: 3px solid teal;
+                     border-bottom: 1px solid gold;
+                     background-color: rgba(129, 129, 129, 0.2);
+                  }
+               .steps_even {
+                  width: 100%;
+                  display: flex;
+                  
+                  gap: 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: end;
+               }
+                  .steps_even h1 {
+                     margin: 0;
+                     width: 50px;
+                     height: 50px;
+                     color: white;
+                     font-size: 30px;
+                     border-radius: 5px;
+                     background-color: rgb(227, 175, 45, 0.8);
 
-               display: flex;
-               justify-content: center;
-            }
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                  .steps_even p {
+                     margin: 0;
+                     width: 70%;
+                     color: white;
+                     font-size: 20px;
+                     text-align: right;
+                     padding: 10px 30px;
+                     border-radius: 10px;
+                     border-right: 3px solid teal;
+                     border-bottom: 1px solid gold;
+                     background-color: rgba(129, 129, 129, 0.2);
+
+                  }
+            
 
 /* SECTION DESIGN END */
 
