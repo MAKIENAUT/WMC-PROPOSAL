@@ -23,7 +23,6 @@ body {
   background-image: url(/wma/photos/silk.jpg);
   
   top: 0;
-  left: 0;
   z-index: 10;
   position: fixed;
 
@@ -56,9 +55,8 @@ body {
            opacity: 2;
            border-radius: 15px;
            transition: all 0.2s;
-           background-color: white;
+           background-color: transparent;
         }
-
   .link_holder {
      width: 45%;
      height: inherit;
@@ -192,6 +190,7 @@ body {
         display: flex;
      }
   }
+
 /* NAVIGATION BAR -END- */
 
 /* INTRO SECTION */
