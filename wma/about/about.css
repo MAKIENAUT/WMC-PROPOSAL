@@ -307,15 +307,9 @@ body {
   transition: 0.25s;
   background-color: transparent;
 }
-.nav_links a:hover {
-  font-weight: 400;
-  color: goldenrod;
-  transition: all 0.2s;
-  border-bottom: 2px solid teal;
-}
 .specializ_buttons button:hover {
   color: goldenrod;
-  transition: all 0.2s;
+  transition: all 0.25s;
   border-bottom: 2px solid teal;
 }
 .specializ_body {
