@@ -64,34 +64,32 @@
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <title>Interest Form</title>
 </head>
-<body>
-    <nav class="navbar" id="myNavBar">
-        <div class="logo_holder">
-            <a class="nav_logo" href="home.html">
-                <img src="../photos/wma-logo.png">
-            </a>
-        </div>
-        <div class="link_holder" id="link_holder">
-           <!-- <div class="nav_links">
-              <a href="">News</a>
-           </div> -->
-           <div class="nav_links">
-              <a href="">Forms</a>
-           </div>
-           <div class="nav_links">
-              <a href="">Process</a>
-           </div>
-           <div class="nav_links">
-              <a href="">About Us</a>
-           </div>
-           <div class="nav_links">
-              <a href="">Contact Us</a>
-           </div>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-           <i class="fa fa-bars"></i>
-        </a>
-     </nav>
+    <!-- NAVBAR START -->
+  <nav class="navbar" id="myNavBar">
+    <div class="logo_holder">
+      <a class="nav_logo" href="https://westmigrationagency.com/">
+        <img src="../photos/wma-logo.png" />
+      </a>
+    </div>
+    <div class="link_holder" id="link_holder">
+      <div class="nav_links">
+        <a href="../form/interest_form.php">Forms</a>
+      </div>
+      <div class="nav_links">
+        <a href="../process/process.html">Process</a>
+      </div>
+      <div class="nav_links">
+        <a href="../about/about.html">About Us</a>
+      </div>
+      <div class="nav_links">
+        <a href="../contact/contact.html">Contact Us</a>
+      </div>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <!-- NAVBAR END -->
 
     <!-- FORM SECTION -->
     <section id="section">
