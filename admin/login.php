@@ -1,5 +1,6 @@
-
-
+<?php
+    include 'config.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,11 +14,17 @@
 </head>
 <body>
     <div class="container">
-        <div class="form_container">
-            <h1>Admin Login</h1>
-
+        <div class="login_container">
+            <div class="login_title">
+                <div class="title_logo">
+                    <a href="https://westmigrationagency.com/">
+                        <img src="../photos/wma-logo.png">
+                    </a>
+                    <h2>Admin Login</h2>
+                </div>
+            </div>
             <div class="form_proper">
-                <form action="authenticate.php" method="post" name="login">
+                <form action="login.php" method="post" name="login">
                     <input 
                         value=""
                         type="text" 

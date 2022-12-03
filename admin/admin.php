@@ -22,12 +22,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
 	<style>
-		body {
-			width: 100%;
-			padding-bottom: 15px;
-			background-size: cover;
-			background-image: url("../photos/background.jpg");
-		}
+
 	</style>
 	<body>
 		<nav class="nav">
@@ -38,14 +33,14 @@ if (!isset($_SESSION['loggedin'])) {
 					</a>
 				</div>
 				<div class="redirect">
-					<a href="profile.php"><i class="fas fa-user-circle"></i>Profile</a>
+					<a href="welcome.php"><i class="fas fa-user-circle"></i>Profile</a>
 					<a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
 				</div>
 			</div>
 		</nav>
 		<div class="content">
 			<h2>Dashboard</h2>
-			<p>Welcome back, <?=$_SESSION['name']?>!</p>
+			<p>Welcome back, <?=$_SESSION['username']?>!</p>
 		</div>
 
 		<div class="applicants">
