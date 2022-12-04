@@ -68,7 +68,7 @@ if (!isset($_SESSION['loggedin'])) {
     <div class="container">
         <div class="directory">
             <h2>
-                list of files in <?php echo $applicant_directory ?>
+                list of files in &nbsp <b><?php echo $applicant_directory ?></b>
             </h2>
         </div>
         <div class="file_instances">
