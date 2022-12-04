@@ -70,6 +70,8 @@ if (!isset($_SESSION['loggedin'])) {
             <h2>
                 FILE MANAGER
             </h2>
+        </div>
+        <div class="directory">
             <h2>
                 list of files in &nbsp<b><?php echo $applicant_directory ?></b>
             </h2>
