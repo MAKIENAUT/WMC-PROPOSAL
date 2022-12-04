@@ -22,7 +22,6 @@ if (!isset($_SESSION['loggedin'])) {
             if ($handle = opendir($applicant_directory . "/")) {
                 while (false !== ($file = readdir($handle))) {
                     if (($file != '.')&&($file != '..')) {
-        
                         $msg .= '<li><a href="'.$applicant_directory.'/'.$file.'">'.$file.'</a></li>';
                     }
                 }
@@ -65,9 +64,21 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
     </nav>
     <!-- ADMIN NAV BAR [END] -->
-    <h2>list of files in <?php echo $applicant_directory ?></h2>
-    <ul>
-        <p><?php echo $msg ?></p>
-    </ul>
+
+    <div class="container">
+        <div class="directory">
+            <h2>
+                list of files in <?php echo $applicant_directory ?>
+            </h2>
+        </div>
+        <div class="file_instances">
+        <p>
+            <?php echo $msg ?>
+        </p>
+    </div>
+    </div>
+
+
+
 </body>
 </html>
