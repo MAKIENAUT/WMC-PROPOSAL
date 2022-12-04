@@ -131,6 +131,7 @@ body {
                padding: 10px 15px;
                height: fit-content;
                border-radius: 10px;
+               transition: all 0.5s;
                border: 1px solid teal;
                background-color: rgb(0, 0, 0, 0.7);
 
@@ -140,6 +141,7 @@ body {
             }
                li:hover {
                   outline-offset: 1px;
+                  transition: all 0.5s;
                   outline: 1px solid teal;
                   border: 1px solid gold;
                   background-color: white;
@@ -149,6 +151,7 @@ body {
                   height: 100%;
                   color: white;
                   font-size: 18px;
+                  transition: all 0.5s;
                   text-decoration: none;
                   font-family: "Montserrat", sans-serif;
 
@@ -156,4 +159,8 @@ body {
                   align-items: center;
                   justify-content: center;
                }
+                  li a:hover {
+                     color: teal;
+                     transition: all 0.5s;
+                  }
                   
