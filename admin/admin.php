@@ -41,6 +41,7 @@ if (!isset($_SESSION['loggedin'])) {
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['username']?>!</p>
+			<p>Remember to Log-out when finished!</p>
 		</div>
 		<div class="applicants">
 			<h2>Applicant Data</h2>
