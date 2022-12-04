@@ -71,12 +71,12 @@
         <div class="specializ_header">
           <h2>SPECIALIZATIONS</h2>
           <div class="specializ_buttons">
-            <button>VISA CATEGORIES</button>
-            <button>EXCHANGE VISITOR VISA</button>
+            <button id="visa_button">VISA CATEGORIES</button>
+            <button id="exchange_button">EXCHANGE VISITOR VISA</button>
           </div>
         </div>
         <div class="specializ_body">
-          <div class="visa_categs">
+          <div class="visa_categs" id="visa_categs" onclick="showVisa()">
             <div class="specializ_content">
               <div class="content_header">
                 <h2>H-1B</h2>
@@ -144,7 +144,11 @@
               </div>
             </div>
           </div>
-          <div class="exchange_visa">
+          <div
+            class="exchange_visa"
+            id="exchange_visa"
+            onclick="showExchange()"
+          >
             <div class="specializ_content">
               <div class="content_header">
                 <h2>Au Pair</h2>
