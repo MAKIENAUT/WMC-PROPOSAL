@@ -48,7 +48,21 @@ if (!isset($_SESSION['loggedin'])) {
     <title>Document</title>
 </head>
 <body>
-    
+    <!-- ADMIN NAV BAR [START] -->
+    <nav class="nav">
+        <div class="nav_container">
+            <div class="logo_holder">
+                <a id="logo" href="../">
+                    <img src="../photos/wma-logo.png" id="logo-img">
+                </a>
+            </div>
+            <div class="redirect">
+                <a href="admin.php"><i class="fas fa-user-circle"></i>Admin</a>
+                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
+            </div>
+        </div>
+    </nav>
+    <!-- ADMIN NAV BAR [END] -->
     <h2>list of files in <?php echo $applicant_directory ?></h2>
     <ul>
         <p><?php echo $msg ?></p>

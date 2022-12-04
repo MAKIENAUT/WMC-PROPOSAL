@@ -159,6 +159,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         name="password" 
                         id="form-control"
                         autocomplete="off"
+                        placeholder="Enter Password"
                         value="<?php echo $password; ?>"
                         class="form-control 
                             <?php 
