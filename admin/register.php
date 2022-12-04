@@ -6,7 +6,7 @@ require_once "config.php";
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true){
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: ../admin.php");
     exit;
 }
