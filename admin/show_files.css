@@ -109,9 +109,15 @@ body {
             flex-direction: column;
             justify-content: center;
          }
-      .file_instance {
+      .file_instances {
          width: 80%;
          padding: 10px 15px;
          height: fit-content;
          border: 1px solid red;
       }
+         ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+         }
+            

@@ -73,9 +73,7 @@ if (!isset($_SESSION['loggedin'])) {
         </div>
         <div class="file_instances">
         <ul>
-            <li>
-                <?php echo $msg ?>
-            </li>
+            <?php echo $msg ?>
         </ul>
 
     </div>
