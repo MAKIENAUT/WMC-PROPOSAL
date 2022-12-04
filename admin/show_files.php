@@ -72,9 +72,12 @@ if (!isset($_SESSION['loggedin'])) {
             </h2>
         </div>
         <div class="file_instances">
-        <p>
-            <?php echo $msg ?>
-        </p>
+        <ul>
+            <li>
+                <?php echo $msg ?>
+            </li>
+        </ul>
+
     </div>
     </div>
 

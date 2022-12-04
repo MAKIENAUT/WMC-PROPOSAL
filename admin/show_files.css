@@ -87,10 +87,10 @@ body {
       justify-content: center;
    }
       .directory {
-         width: 100%;
+         width: 90%;
          padding: 10px 15px;
          height: fit-content;
-         border: 1px solid blue;
+         border-radius: 10px;
          background-color: rgb(0, 0, 0, 0.7);
 
          display: flex;
@@ -98,11 +98,10 @@ body {
          justify-content: center;
       }
          .directory h2 {
-            width: 80%;
+            width: 100%;
             color: white;
             font-size: 25px;
             font-weight: 500;
-            border-radius: 10px;
             font-family: "Montserrat", sans-serif;
 
             display: flex;
@@ -110,3 +109,9 @@ body {
             flex-direction: column;
             justify-content: center;
          }
+      .file_instance {
+         width: 80%;
+         padding: 10px 15px;
+         height: fit-content;
+         border: 1px solid red;
+      }
