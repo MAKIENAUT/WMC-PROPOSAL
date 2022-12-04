@@ -5,7 +5,11 @@ require_once "config.php";
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
- 
+
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true){
+    header("location: ../admin.php");
+    exit;
+}
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
