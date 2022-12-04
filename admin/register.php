@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare a select statement
         $sql = "SELECT id FROM users WHERE username = ?";
         
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "s", $param_username);
             
@@ -69,7 +69,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         // Prepare an insert statement
         $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
          
-        if($stmt = mysqli_prepare($link, $sql)){
+        if($stmt = mysqli_prepare($conn, $sql)){
             // Bind variables to the prepared statement as parameters
             mysqli_stmt_bind_param($stmt, "ss", $param_username, $param_password);
             
@@ -91,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Close connection
-    mysqli_close($link);
+    mysqli_close($conn);
 }
 ?>
  
@@ -100,6 +100,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="reset-password.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body{ font: 14px sans-serif; }
@@ -107,31 +109,80 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </style>
 </head>
 <body>
-    <div class="wrapper">
-        <h2>Sign Up</h2>
-        <p>Please fill this form to create an account.</p>
-        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-            <div class="form-group">
-                <label>Username</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
-                <span class="invalid-feedback"><?php echo $username_err; ?></span>
-            </div>    
-            <div class="form-group">
-                <label>Password</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
-                <span class="invalid-feedback"><?php echo $password_err; ?></span>
+    <!-- ADMIN NAV BAR [START] -->
+    <nav class="nav">
+        <div class="nav_container">
+            <div class="logo_holder">
+                <a id="logo" href="../">
+                    <img src="../photos/wma-logo.png" id="logo-img">
+                </a>
             </div>
-            <div class="form-group">
-                <label>Confirm Password</label>
-                <input type="password" name="confirm_password" class="form-control <?php echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $confirm_password; ?>">
-                <span class="invalid-feedback"><?php echo $confirm_password_err; ?></span>
+            <div class="redirect">
+                <a href="welcome.php"><i class="fas fa-user-circle"></i>Profile</a>
+                <a href="logout.php"><i class="fas fa-sign-out-alt"></i>Logout</a>
             </div>
-            <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Submit">
-                <input type="reset" class="btn btn-secondary ml-2" value="Reset">
+        </div>
+    </nav>
+    <!-- ADMIN NAV BAR [END] -->
+    
+    <div class="container">
+        <div class="login_container">
+            <h2>Register Admin User</h2>
+            <div class="form_proper">
+                <form 
+                    method="post"
+                    action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" >
+
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="form-control"
+                        autocomplete="off"
+                        placeholder="Username"
+                        value="<?php echo $username; ?>"
+                        class="form-control 
+                            <?php 
+                                echo (!empty($username_err)) ? 'is-invalid' : ''; 
+                            ?>" >
+                    <span class="invalid-feedback">
+                        <?php echo $username_err; ?>
+                    </span>
+
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="form-control"
+                        autocomplete="off"
+                        value="<?php echo $password; ?>"
+                        class="form-control 
+                            <?php 
+                                echo (!empty($password_err)) ? 'is-invalid' : ''; 
+                            ?>">
+                    <span class="invalid-feedback">
+                        <?php echo $password_err; ?>
+                    </span>
+
+                    <input 
+                        type="password" 
+                        id="form-control"
+                        name="confirm_password" 
+                        placeholder="Confirm Password"
+                        class="form-control 
+                            <?php 
+                                echo (!empty($confirm_password_err)) ? 'is-invalid' : ''; 
+                            ?>">
+                        <span class="invalid-feedback">
+                            <?php echo $confirm_password_err; ?>
+                        </span>
+
+                    <div class="actions">
+                        <input class="submit" type="submit" value="Submit">
+                        <input class="submit" type="reset" value="Reset">
+                        <a class="cancel" href="welcome.php">Cancel</a>
+                    </div>
+                </form>
             </div>
-            <a href="welcome.php">Back To Admin</a>
-        </form>
-    </div>    
+        </div>
+    </div>      
 </body>
 </html>

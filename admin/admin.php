@@ -21,14 +21,12 @@ if (!isset($_SESSION['loggedin'])) {
 		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 	</head>
-	<style>
-
-	</style>
 	<body>
+		<!-- ADMIN NAV BAR [START] -->
 		<nav class="nav">
 			<div class="nav_container">
 				<div class="logo_holder">
-					<a id="logo" href="../home/home.php">
+					<a id="logo" href="../">
 						<img src="../photos/wma-logo.png" id="logo-img">
 					</a>
 				</div>
@@ -38,11 +36,12 @@ if (!isset($_SESSION['loggedin'])) {
 				</div>
 			</div>
 		</nav>
+		<!-- ADMIN NAV BAR [END] -->
+
 		<div class="content">
 			<h2>Dashboard</h2>
 			<p>Welcome back, <?=$_SESSION['username']?>!</p>
 		</div>
-
 		<div class="applicants">
 			<h2>Applicant Data</h2>
 
