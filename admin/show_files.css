@@ -153,6 +153,7 @@ body {
                   height: 100%;
                   color: white;
                   font-size: 18px;
+                  font-weight: 500;
                   transition: all 0.25s;
                   text-decoration: none;
                   font-family: "Montserrat", sans-serif;
@@ -163,6 +164,7 @@ body {
                }
                   li a:hover {
                      color: teal;
+                     font-weight: 600;
                      transition: all 0.25s;
                   }
                   
