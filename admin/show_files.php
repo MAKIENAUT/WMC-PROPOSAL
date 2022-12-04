@@ -1,6 +1,12 @@
 <?php 
 
-    include "config.php"; 
+session_start();
+include "config.php";
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login/login.php');
+	exit;
+}
 
     if (isset($_GET['id'])) {
 
