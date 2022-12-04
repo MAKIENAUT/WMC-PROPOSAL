@@ -1,17 +1,17 @@
 <?php
-// Initialize the session
+
 session_start();
-// Include config file
-require_once "config.php";
- 
+include "config.php";
+// If the user is not logged in redirect to the login page...
+if (!isset($_SESSION['loggedin'])) {
+	header('Location: login/login.php');
+	exit;
+}
 // Define variables and initialize with empty values
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
 
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: ../admin.php");
-    exit;
-}
+
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
