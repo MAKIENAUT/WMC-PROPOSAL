@@ -7,6 +7,8 @@ function myFunction() {
    }
 }
 
+valueChecker();
+
 window.value = 1;
 
 function showContent1() {
