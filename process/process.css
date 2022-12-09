@@ -453,14 +453,18 @@ section {
 .button4,
 .button5 {
   display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-
-  background-color: #ffb03a;
   /* padding: 20px; */
-  border-radius: 50%;
+}
+.content_buttons h1 {
+  text-align: center;
+  color: white;
 }
 .content_buttons a {
+  border-radius: 50%;
+  background-color: #ffb03a;
   width: 60px;
   height: 60px;
   color: white;
