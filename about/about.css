@@ -257,20 +257,19 @@ body {
          display: flex;
          align-items: center;
          flex-direction: column;
-         justify-content: space-evenly;
+         justify-content: center;
 
          position: relative;
       }
          .right h1 {
-            top: 0;
-            font-size: 30px;
+            top: 15px;
             color: teal;
             position: absolute;
             font-family: Georgia, 'Times New Roman', Times, serif;
          }
          .right p {
             margin: 0;
-            font-size: 20px;
+            font-size: 19px;
             line-height: 2rem;
             text-indent: 10%;
             font-family: Georgia, "Times New Roman", Times, serif;
@@ -287,6 +286,7 @@ body {
                z-index: 1;
                display: flex;
                transition: all 0.5s;
+
             }
             #content2 {
                opacity: 0;
@@ -300,138 +300,106 @@ body {
                display: flex;
                transition: all 0.5s;
             }
+   .specialization {
+      width: 100%;
+      height: fit-content;
+      margin-top: 40px;
 
-.specializ {
-   height: fit-content;
-   margin: 40px 0 0;
-   display: flex;
-   flex-flow: column nowrap;
-   /* justify-content: space-between; */
-}
-.specializ_header {
-   height: 75px;
-   /* width: 100%; */
-   padding: 0 50px 0;
-   display: flex;
-   align-items: center;
-   border-top: 1px solid gold;
-   border-bottom: 1px solid gold;
-  /* background-color: bisque; */
-}
-.specializ_header h2 {
-   font-size: 25px;
-   font-weight: 600;
-   margin: 0;
-   /* margin: 0 0 20px; */
-   margin-right: auto;
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.specializ_buttons {
-   width: 50%;
-   display: flex;
-   justify-content: space-around;
-}
-.specializ_buttons button {
-   padding: 10px;
-   border: none;
-   font-size: 20px;
-   font-family: Georgia, "Times New Roman", Times, serif;
-   cursor: pointer;
-   color: black;
-   text-decoration: none;
-   transition: 0.25s;
-   background-color: transparent;
-}
-.nav_links a:hover {
-   font-weight: 400;
-   color: goldenrod;
-   transition: all 0.2s;
-   border-bottom: 2px solid teal;
-}
-.specializ_buttons button:hover {
-   color: goldenrod;
-   transition: all 0.2s;
-   border-bottom: 2px solid teal;
-}
-.specializ_body {
-   padding: 0 50px 0;
-   display: flex;
-   flex-flow: column nowrap;
-   background-color: rgb(255, 252, 233);
-   /* align-items: center; */
-}
-.specializ_content {
-   display: flex;
-   flex-flow: column nowrap;
-}
-.content_header {
-   height: 100px;
-   display: flex;
-   align-items: center;
-   border-bottom: 1px solid gold;
-}
-.content_header h2 {
-   font-size: 35px;
-   font-weight: 600;
-   margin: 0;
-   /* margin: 0 0 20px; */
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.content_body {
-   margin: 40px 0;
-}
-.content_body p {
-   font-size: 20px;
-   line-height: 1.75rem;
-   margin: 0;
-   /* font-weight: 400; */
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.exchange_body {
-   margin: 40px 0;
-   gap: 20px;
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-between;
-}
-.exchange_left {
-   width: 50%;
-   display: flex;
-   flex-flow: column nowrap;
-   gap: 20px;
-}
-.exchange_left h1 {
-   font-size: 35px;
-   font-weight: 600;
-   margin: 0 0 20px;
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.exchange_left p {
-   font-size: 20px;
-   line-height: 1.75rem;
-   margin: 0;
-   /* font-weight: 400; */
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.exchange_right {
-   width: 50%;
-   display: flex;
-   flex-flow: column nowrap;
-   gap: 20px;
-}
-.exchange_right h1 {
-   font-size: 35px;
-   font-weight: 600;
-   margin: 0 0 20px;
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.exchange_right p {
-   font-size: 20px;
-   line-height: 1.75rem;
-   margin: 0;
-   /* font-weight: 400; */
-   font-family: Georgia, "Times New Roman", Times, serif;
-}
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+   }
+      .special_navbar {
+         width: 100%;
+         height: 70px;
+         border: 1px solid gold;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }  
+         .spec_left {
+            width: 30%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+            .spec_left h1 {
+               margin: 0;
+               padding: 0;
+               
+               font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+         .spec_right {
+            width: 60%;
+            height: 100%;
+
+            gap: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+            .spec_right button {
+               color: black;
+               background: none;
+               padding: 10px 15px;
+               transition: all 0.5s;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+      .content_section {
+         width: 90%;
+         padding: 20px 0;
+      }
+         .visa_categories {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+         }
+            .content_header {
+               width: 100%;
+               padding: 15px 0;
+               border-radius: 10px;
+               border-right: 1px solid gold;
+               border-bottom: 2px solid teal;
+
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+            }            
+               .content_header h1 {
+                  margin: 0;
+                  width: 15%;
+                  font-size: 35px;
+                  color: rgb(48, 93, 98);
+                  border: 1px solid blue;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }
+                  .content_header h1 i {
+                     font-size: 80px;
+                  }
+               .content_header h3 {
+                  margin: 0;
+                  width: 70%;
+                  font-size: 25px;
+                  color: rgb(48, 93, 98);
+                  border: 1px solid red;
+               }
+               .content_header:hover .h1{
+                  color: goldenrod;
+               }
+               .content_header:hover .h3{
+                  color: goldenrod;
+               }
+
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */

@@ -1,90 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="about.css" />
-    <script src="about.js"></script>
-    <title>About Us</title>
-  </head>
 
-  <body onload="valueChecker()">
-      <!-- NAVBAR START -->
-  <nav class="navbar" id="myNavBar">
-    <div class="logo_holder">
-      <a class="nav_logo" href="https://westmigrationagency.com/">
-        <img src="../photos/wma-logo.png" />
-      </a>
-    </div>
-    <div class="link_holder" id="link_holder">
-      <div class="nav_links">
-        <a href="../form/interest_form.php">Forms</a>
-      </div>
-      <div class="nav_links">
-        <a href="../process/process.html">Process</a>
-      </div>
-      <div class="nav_links">
-        <a href="../about/about.html">About Us</a>
-      </div>
-      <div class="nav_links">
-        <a href="../contact/contact.html">Contact Us</a>
-      </div>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </nav>
-  <!-- NAVBAR END -->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="about.css" />
+	<script src="about.js"></script>
+	<title>About Us</title>
+</head>
 
-    <!-- CONTENT START -->
-    <div class="container">
-      <header>
-        <div class="content_title">
-          <h1>About Us</h1>
-        </div>
-      </header>
+<body onload="valueChecker(), selector();">
+	<!-- NAVBAR START -->
+	<nav class="navbar" id="myNavBar">
+		<div class="logo_holder">
+			<a class="nav_logo" href="https://westmigrationagency.com/">
+				<img src="../photos/wma-logo.png" />
+			</a>
+		</div>
+		<div class="link_holder" id="link_holder">
+			<div class="nav_links">
+				<a href="../form/interest_form.php">Forms</a>
+			</div>
+			<div class="nav_links">
+				<a href="../process/process.html">Process</a>
+			</div>
+			<div class="nav_links">
+				<a href="../about/about.html">About Us</a>
+			</div>
+			<div class="nav_links">
+				<a href="../contact/contact.html">Contact Us</a>
+			</div>
+		</div>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</nav>
+	<!-- NAVBAR END -->
 
-      <div class="content">
-        <div class="left">
-          <h1 id="who" onclick="showContent1()">
-            Who We Are
-          </h1>
-          <h1 id="what" onclick="showContent2()">
-            What We Are
-          </h1>
-          <h1 id="who_2" onclick="showContent3()">
-            What We Do
-          </h1>
-        </div>
-        <div class="right">
-          <h1 id="content_title">Who We Are</h1>
-          <p id="content1">
-            West Migration Agency ("WMA") is a minority and women-owned and
-            operated, consulting and recruiting firm in California. The founders
-            lead our diverse and dynamic business, bringing their years of legal
-            experience credentials to support individuals throughout their
-            migration and employment journey. We search for career opportunities
-            among our approved, designated list of sponsors and curate every
-            detail for career enhancement and development.
-          </p>
-          <p id="content2">
-            WMA is a focused service consulting firm supporting Temporary Employment Visas (H, L, O, P, Q) and Exchange Visitor Visa (J). WMA acts as a liaison between the clients ("qualified applicants") and employers. We are looking for exceptional individuals ready to share their culture and experience in the United States.
-          </p>
-          <p id="content3">
-            WMA will help you organize the program you are interested in and find a suitable program applicable to you. We understand the drive and self-investment required to take this big step as we play an essential role in advising and corresponding with applicants on various topics, including requirements at various stages, relevant documentation, and adjustments needed to have a pleasant experience living and working in the United States. We believe great mentors affect and bring out great leaders in the future. We want to make a difference in people's lives by streamlining the complex process and navigating the ever-evolving world of international programs.
-          </p>
-        </div>
-      </div>
+	<!-- CONTENT START -->
+	<div class="container">
+		<header>
+			<div class="content_title">
+				<h1>About Us</h1>
+			</div>
+		</header>
 
-      <div class="specializ">
+		<div class="content">
+			<div class="left">
+				<h1 id="who" onclick="showContent1()">
+					Who We Are
+				</h1>
+				<h1 id="what" onclick="showContent2()">
+					What We Are
+				</h1>
+				<h1 id="who_2" onclick="showContent3()">
+					What We Do
+				</h1>
+			</div>
+			<div class="right">
+				<h1 id="content_title">Who We Are</h1>
+				<p id="content1">
+					West Migration Agency ("WMA") is a minority and women-owned and
+					operated, consulting and recruiting firm in California. The founders
+					lead our diverse and dynamic business, bringing their years of legal
+					experience credentials to support individuals throughout their
+					migration and employment journey. We search for career opportunities
+					among our approved, designated list of sponsors and curate every
+					detail for career enhancement and development.
+				</p>
+				<p id="content2">
+					WMA is a focused service consulting firm supporting Temporary Employment Visas (H, L, O, P, Q) and
+					Exchange Visitor Visa (J). WMA acts as a liaison between the clients ("qualified applicants") and
+					employers. We are looking for exceptional individuals ready to share their culture and experience in the
+					United States.
+				</p>
+				<p id="content3">
+					WMA will help you organize the program you are interested in and find a suitable program applicable to
+					you. We understand the drive and self-investment required to take this big step as we play an essential
+					role in advising and corresponding with applicants on various topics, including requirements at various
+					stages, relevant documentation, and adjustments needed to have a pleasant experience living and working
+					in the United States. We believe great mentors affect and bring out great leaders in the future. We want
+					to make a difference in people's lives by streamlining the complex process and navigating the
+					ever-evolving world of international programs.
+				</p>
+			</div>
+		</div>
+
+
+		<div class="specialization">
+			<div class="special_navbar">
+				<div class="spec_left">
+					<h1>SPECIALIZATION</h1>
+				</div>
+				<div class="spec_right">
+					<button 
+						class="visa_button" 
+						id="visa_button" 
+						onclick="visa_categories()">
+						VISA CATEGORIES
+					</button>
+					<button 
+						class="exchange_button" 
+						id="exchange_button" 
+						onclick="exchange_visitor()">
+						EXCHANGE VISITOR VISA
+					</button>
+				</div>
+			</div>
+			<div class="content_section">
+				<div class="visa_categories" id="visa_categories">
+					<div class="content_header">
+						<h1 class="h1"><i class="fa-solid fa-passport"></i>H-1B</h1>
+						<h3 class="h3">
+							Specialty Occupations, DOD Cooperative Research and Development Project Workers, and Fashion Models
+						</h3>
+					 </div>
+					 <div class="content_body">
+						<p>
+						  Workers in a specialty occupation and the following
+						  sub-classifications: H-1B1 - Free Trade Agreement workers in a
+						  specialty occupation from Chile and Singapore. H-1B2 -
+						  Specialty occupations related to Department of Defense
+						  Cooperative Research and Development projects or Co-production
+						  projects. H-1B3 - Fashion models of distinguished merit and
+						  ability.
+						</p>
+					 </div>
+				</div>
+				<div class="exchange_visitor" id="exchange_visitor">
+					<h1>EXCHANGE VISITOR VISA</h1>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="specializ">
         <div class="specializ_header">
           <h2>SPECIALIZATIONS</h2>
           <div class="specializ_buttons">
@@ -161,6 +213,7 @@
               </div>
             </div>
           </div>
+
           <div
             class="exchange_visa"
             id="exchange_visa"
@@ -238,7 +291,7 @@
                     foreign government or a state or local government in the
                     United States and a foreign government; or Student is
                     participating in a student internship program that will
-                    fulfill the educational objectives for the student’s degree
+                    fulfill the educational objectives for the student's degree
                     program in his or her home country; or Pursue a non-degree
                     program must be enrolled full-time in a prescribed course of
                     study. The maximum duration of a non-degree program is 24
@@ -529,70 +582,71 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- CONTENT END -->
+    </div> -->
+		<!-- CONTENT END -->
 
-  <!-- FOOTER START -->
-  <footer>
-    <div class="footer_container">
-      <div class="logo_container">
-        <a href="home.php">
-          <img src="../photos/wma-logo.png" />
-        </a>
-        <p>© 2023 West Migration Agency All Rights Reserved</p>
-      </div>
+		<!-- FOOTER START -->
+		<footer>
+			<div class="footer_container">
+				<div class="logo_container">
+					<a href="home.php">
+						<img src="../photos/wma-logo.png" />
+					</a>
+					<p>© 2023 West Migration Agency All Rights Reserved</p>
+				</div>
 
-      <div class="contact_info">
-        <div>
-          <h4>Address</h4>
-          <p>3400 Cottage Way STE. G2 #11495 <br />Sacramento, CA 95825</p>
-        </div>
-        <div>
-          <h4>E-Mail Address</h4>
-          <p>admin@westmigrationagency.us</p>
-        </div>
-        <div>
-          <h4>Phone</h4>
-          <p>415-633-6865</p>
-        </div>
-      </div>
-      <div class="about_links">
-        <h3 class="about_title">About Us</h3>
-        <div class="about_links_container">
-          <a class="company_links" href="">Our Company</a>
-          <a class="company_links" href="">Our Specializations</a>
-          <a class="company_links" href="">Visa Categories</a>
-        </div>
-      </div>
-      <div class="about_links">
-        <h3 class="about_title">Processes</h3>
-        <div class="about_links_container">
-          <a class="company_links" href="">Consultation Process</a>
-          <a class="company_links" href="">Timeline of Application</a>
-          <a class="company_links" href="">Visa Categories</a>
-        </div>
-      </div>
-      <div class="socials">
-        <div class="socials-container">
-          <div>
-            <a href="https://www.facebook.com/profile.php?id=100087001537840" id="socialButton1">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </div>
-          <div>
-            <a href="#" id="socialButton2">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-          <div class="email_button">
-            <button id="socialButton3" onclick="copyToClipboard()">
-              <i class="fa-solid fa-envelope"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- FOOTER END -->
-  </body>
+				<div class="contact_info">
+					<div>
+						<h4>Address</h4>
+						<p>3400 Cottage Way STE. G2 #11495 <br />Sacramento, CA 95825</p>
+					</div>
+					<div>
+						<h4>E-Mail Address</h4>
+						<p>admin@westmigrationagency.us</p>
+					</div>
+					<div>
+						<h4>Phone</h4>
+						<p>415-633-6865</p>
+					</div>
+				</div>
+				<div class="about_links">
+					<h3 class="about_title">About Us</h3>
+					<div class="about_links_container">
+						<a class="company_links" href="">Our Company</a>
+						<a class="company_links" href="">Our Specializations</a>
+						<a class="company_links" href="">Visa Categories</a>
+					</div>
+				</div>
+				<div class="about_links">
+					<h3 class="about_title">Processes</h3>
+					<div class="about_links_container">
+						<a class="company_links" href="">Consultation Process</a>
+						<a class="company_links" href="">Timeline of Application</a>
+						<a class="company_links" href="">Visa Categories</a>
+					</div>
+				</div>
+				<div class="socials">
+					<div class="socials-container">
+						<div>
+							<a href="https://www.facebook.com/profile.php?id=100087001537840" id="socialButton1">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+						</div>
+						<div>
+							<a href="#" id="socialButton2">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+						</div>
+						<div class="email_button">
+							<button id="socialButton3" onclick="copyToClipboard()">
+								<i class="fa-solid fa-envelope"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
+</body>
+
 </html>
