@@ -148,3 +148,11 @@ function selector() {
   console.log(window.raw);
 }
 
+function reveal_body1() {
+  var x = document.getElementById("content_body1");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
