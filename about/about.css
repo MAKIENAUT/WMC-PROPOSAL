@@ -497,8 +497,204 @@ body {
                            align-items: center;
                            justify-content: start;
                         }
+         .exchange_visitor {
+            width: 100%;
 
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+         }
+            .exchange_title {
+               width: 100%;
 
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+            }
+               .main_title {
+                  width: 35%;
+                  height: fit-content;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+               }
+                  .main_title h1 {
+                     margin: 0;
+                     width: 100%;
+                     padding: 15px 15px;
+                     font-size: 30px;
+                     text-align: center;
+                     border-radius: 15px;
+                     color: rgb(204, 146, 0);
+                     border-left: 2px solid teal;
+                     border-right: 2px solid teal;
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+               .sub_title {
+                  width: 60%;
+                  padding: 20px;
+                  border-radius: 15px;
+                  border-left: 2px solid teal;
+                  border-right: 2px solid teal;
+               }
+                  .sub_title h2{
+                     margin-top: 0;
+                     font-size: 25px;
+                     margin-bottom: 10px;
+                     color: rgb(204, 146, 0);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+                  }
+                  .sub_title h4{
+                     margin: 0;
+                     font-size: 18px;
+                     text-indent: 10%;
+                     color: rgb(11, 37, 40);
+                     font-family: "Montserrat", sans-serif;
+                  }
+            .category_banner {
+               width: 100%;
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+               .category_banner h1 {
+                  font-size: 35px;
+                  color: rgb(48, 93, 98);
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+               }
+            .exchange_body {
+               width: 65%;
+               transition: all 1s;
+               border-radius: 15px;
+               border-top: 2px solid teal;
+               border-bottom: 2px solid teal;
+
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+            }
+               .panel_head {
+                  width: 100%;
+                  cursor: pointer;
+                  transition: all 1s;
+                  gap:30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }
+                  .panel_head h1 {
+                     margin: 0;
+                     width: 65%;
+                     font-size: 35px;
+                     text-align: center;
+                     transition: all 1s;
+                     color: rgb(48, 93, 98);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+
+                     gap: 15px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-around;
+                  }
+                     .panel_head h1 i {
+                        font-size: 80px;
+                        transition: all 1s;
+                     }
+                     .panel_head h1 b {
+                        width: 100%;
+                        font-size: 35px;
+                        transition: all 1s;
+                     }
+                     .panel_head:hover .panel_h1{
+                        color: goldenrod;
+                        transition: all 1s;
+                     }
+                  .panel_head h4 {
+                     width: 5%;
+                     font-size: 30px;
+                     color: goldenrod;
+                     transition: all 1s;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                     .panel_head:hover .panel_h4{
+                        color: teal;
+                        transition: all 0.25s;
+                        transform: rotate(180deg);
+                     }
+                        .panel_head h4 i {
+                           transform: rotate(180deg);
+                        }
+               .panel_body {
+                  width: 100%;
+                  margin-top: 20px;
+                  padding: 0 0 15px 0;
+                  border-radius: 15px;
+                  transition: all 1s;
+                  border-left: 2px solid gold;
+                  border-right: 2px solid gold;
+
+                  display: none;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }
+                  
+                  .left_panel {
+                     width: 45%;
+                     padding: 0 20px;
+                     transition: all 1s;
+                  }
+                     .left_panel h1 {
+                        margin: 0;
+                        width: 100%;
+                        transition: all 1s;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+                     .left_panel p {
+                        width: 100%;
+                        font-size: 16px;
+                        text-indent: 10%;
+                        transition: all 1s;
+                     }
+                     .left_panel p b{
+                        font-size: 20px;
+                        text-indent: 10%;
+                        color: rgb(48, 93, 98);
+                     }
+
+                  .right_panel {
+                     width: 45%;
+                     padding: 0 20px;
+                     transition: all 1s;
+                  }
+                     .right_panel h1 {
+                        margin: 0;
+                        width: 100%;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                     }
+                     .right_panel p {
+                        width: 100%;
+                        font-size: 16px;
+                     }
+                        .right_panel p b {
+                           color: rgb(48, 93, 98);
+                        }
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */

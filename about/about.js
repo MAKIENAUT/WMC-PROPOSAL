@@ -106,7 +106,7 @@ function valueChecker() {
 
 
 // SPECIALIZATION SECTION
-window.raw = 0;
+window.raw = 1;
 
 function visa_categories() {
   window.raw = 0;
@@ -154,5 +154,20 @@ function reveal_body1() {
     x.style.display = "none";
   } else {
     x.style.display = "flex";
+  }
+}
+
+
+
+// EXCHANGE SECTION
+function show_body1() {
+  var x = document.getElementById("panel_body1");
+  var y = document.getElementById("exchange_body1");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
   }
 }
