@@ -669,10 +669,18 @@ body {
                         text-indent: 10%;
                         transition: all 1s;
                      }
-                     .left_panel p b{
-                        font-size: 20px;
-                        text-indent: 10%;
-                        color: rgb(48, 93, 98);
+                        .left_panel p b{
+                           font-size: 20px;
+                           text-indent: 10%;
+                           color: rgb(48, 93, 98);
+                        }
+                     .left_panel ul {
+                        width: 90%;
+                        
+                        gap: 10px;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
                      }
 
                   .right_panel {
@@ -688,6 +696,10 @@ body {
                         align-items: center;
                         justify-content: start;
                      }
+                     .right_panel h2 {
+                        font-size: 16px;
+                        color: rgb(48, 93, 98);
+                     }
                      .right_panel p {
                         width: 100%;
                         font-size: 16px;
@@ -695,6 +707,7 @@ body {
                         .right_panel p b {
                            color: rgb(48, 93, 98);
                         }
+                     
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */
