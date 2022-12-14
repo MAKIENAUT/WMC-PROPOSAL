@@ -148,3 +148,124 @@ function selector() {
   console.log(window.raw);
 }
 
+function reveal_body1() {
+  var x = document.getElementById("content_body1");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+// EXCHANGE SECTION
+function show_body1() {
+  var x = document.getElementById("panel_body1");
+  var y = document.getElementById("exchange_body1");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body2() {
+  var x = document.getElementById("panel_body2");
+  var y = document.getElementById("exchange_body2");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body3() {
+  var x = document.getElementById("panel_body3");
+  var y = document.getElementById("exchange_body3");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body4() {
+  var x = document.getElementById("panel_body4");
+  var y = document.getElementById("exchange_body4");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body5() {
+  var x = document.getElementById("panel_body5");
+  var y = document.getElementById("exchange_body5");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body6() {
+  var x = document.getElementById("panel_body6");
+  var y = document.getElementById("exchange_body6");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body7() {
+  var x = document.getElementById("panel_body7");
+  var y = document.getElementById("exchange_body7");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+  }
+}
+
+function show_body8() {
+  var x = document.getElementById("panel_body8");
+  var y = document.getElementById("exchange_body8");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+    z.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+    z.style.width = "65%";
+  }
+}
+
+function show_body9() {
+  var x = document.getElementById("panel_body9");
+  var y = document.getElementById("exchange_body9");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+    y.style.width = "65%";
+    z.style.width = "65%";
+  } else {
+    x.style.display = "flex";
+    y.style.width = "90%";
+    z.style.width = "65%";
+  }
+}

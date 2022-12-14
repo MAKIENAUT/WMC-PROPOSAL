@@ -217,9 +217,8 @@ body {
       }
    .content {
       width: 100%;
-      height: 400px;
+      height: 380px;
       padding: 0 0;
-      border: 1px solid ;
 
       gap: 20px;
       display: flex;
@@ -303,7 +302,6 @@ body {
    .specialization {
       width: 100%;
       height: fit-content;
-      margin-top: 40px;
 
       display: flex;
       align-items: center;
@@ -356,11 +354,16 @@ body {
          .visa_categories {
             width: 100%;
 
+            gap: 15px;
             display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: center;
          }
+            .visa_categories_subtitle {
+               text-indent: 10%;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+            }
             .content_header {
                width: 100%;
                padding: 15px 0;
@@ -370,36 +373,341 @@ body {
 
                display: flex;
                align-items: center;
+               flex-direction: column;
                justify-content: space-evenly;
-            }            
-               .content_header h1 {
-                  margin: 0;
-                  width: 15%;
+            }     
+               .content_head {
+                  width: 100%;
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }       
+                  .content_head h1 {
+                     margin: 0;
+                     width: 15%;
+                     font-size: 35px;
+                     transition: all 0.5s;
+                     color: rgb(48, 93, 98);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                  }
+                     .content_head h1 i {
+                        font-size: 80px;
+                     }
+                     .content_head:hover .h1{
+                        color: goldenrod;
+                        transition: all 0.5s;
+                     }
+                  .content_head .h3 {
+                     margin: 0;
+                     width: 70%;
+                     font-size: 29px;
+                     transition: all 0.5s;
+                     color: rgb(48, 93, 98);
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: start;
+                  }
+                     .content_head:hover .h3{
+                        color: goldenrod;
+                        transition: all 0.25s;
+                     }
+                  .content_head h4 {
+                     width: 5%;
+                     font-size: 30px;
+                     color: goldenrod;
+                     transition: all 0.25s;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                     .content_head:hover .h4{
+                        color: teal;
+                        transition: all 0.25s;
+                        transform: rotate(180deg);
+                     }
+                        .content_head h4 i {
+                           transform: rotate(180deg);
+                        }
+               .content_body {
+                  width: 100%;
+
+                  display: none;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }
+                  .content_body_title {
+                     width: 30%;
+                     padding: 0 10px;
+                     border-radius: 15px;
+                     color: rgb(48, 93, 98);
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                  }
+                     .content_body_title h1 {
+                        width: 100%;
+                        font-size: 25px;
+                        color: rgb(48, 93, 98);
+                     }
+                  .content_container{
+                     width: 60%;
+                     font-size: 19px;
+                     padding: 10px 10px;
+                     border-radius: 15px;
+                     border-left: 2px solid teal;
+                     border-right: 2px solid teal;
+
+                     display: flex;
+                     align-items: center;
+                     flex-direction: column;
+                     justify-content: center;
+                  }
+                     .content_sub-class {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-evenly;
+                     }
+                        .content_sub-class h4 {
+                           margin: 0;
+                           width: 100%;
+                           color: rgb(48, 93, 98);
+
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                        }
+                        .content_sub-class h3 {
+                           width: 20%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                           color: goldenrod;
+                        }
+                        .content_sub-class p {
+                           width: 75%;
+                           display: flex;
+                           align-items: center;
+                           justify-content: start;
+                        }
+         .exchange_visitor {
+            width: 100%;
+
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+         }
+            .exchange_title {
+               width: 100%;
+
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+            }
+               .main_title {
+                  width: 35%;
+                  height: fit-content;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+               }
+                  .main_title h1 {
+                     margin: 0;
+                     width: 100%;
+                     padding: 15px 15px;
+                     font-size: 30px;
+                     text-align: center;
+                     border-radius: 15px;
+                     color: rgb(204, 146, 0);
+                     border-left: 2px solid teal;
+                     border-right: 2px solid teal;
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+               .sub_title {
+                  width: 60%;
+                  padding: 20px;
+                  border-radius: 15px;
+                  border-left: 2px solid teal;
+                  border-right: 2px solid teal;
+               }
+                  .sub_title h2{
+                     margin-top: 0;
+                     font-size: 25px;
+                     margin-bottom: 10px;
+                     color: rgb(204, 146, 0);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
+                  }
+                  .sub_title h4{
+                     margin: 0;
+                     font-size: 18px;
+                     text-indent: 10%;
+                     color: rgb(11, 37, 40);
+                     font-family: "Montserrat", sans-serif;
+                  }
+            .category_banner {
+               width: 100%;
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+               .category_banner h1 {
                   font-size: 35px;
                   color: rgb(48, 93, 98);
-                  border: 1px solid blue;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+               }
+            .exchange_body {
+               width: 65%;
+               transition: all 1s;
+               border-radius: 15px;
+               border-top: 2px solid teal;
+               border-bottom: 2px solid teal;
 
+               display: flex;
+               align-items: center;
+               justify-content: space-evenly;
+            }
+               .panel_head {
+                  width: 100%;
+                  cursor: pointer;
+                  transition: all 1s;
+                  gap:30px;
                   display: flex;
                   align-items: center;
                   justify-content: space-evenly;
                }
-                  .content_header h1 i {
-                     font-size: 80px;
-                  }
-               .content_header h3 {
-                  margin: 0;
-                  width: 70%;
-                  font-size: 25px;
-                  color: rgb(48, 93, 98);
-                  border: 1px solid red;
-               }
-               .content_header:hover .h1{
-                  color: goldenrod;
-               }
-               .content_header:hover .h3{
-                  color: goldenrod;
-               }
+                  .panel_head h1 {
+                     margin: 0;
+                     width: 65%;
+                     font-size: 35px;
+                     text-align: center;
+                     transition: all 1s;
+                     color: rgb(48, 93, 98);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
 
+                     gap: 15px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-around;
+                  }
+                     .panel_head h1 i {
+                        font-size: 80px;
+                        transition: all 1s;
+                     }
+                     .panel_head h1 b {
+                        width: 100%;
+                        font-size: 35px;
+                        transition: all 1s;
+                     }
+                     .panel_head:hover .panel_h1{
+                        color: goldenrod;
+                        transition: all 1s;
+                     }
+                  .panel_head h4 {
+                     width: 5%;
+                     font-size: 30px;
+                     color: goldenrod;
+                     transition: all 1s;
+
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                  }
+                     .panel_head:hover .panel_h4{
+                        color: teal;
+                        transition: all 0.25s;
+                        transform: rotate(180deg);
+                     }
+                        .panel_head h4 i {
+                           transform: rotate(180deg);
+                        }
+               .panel_body {
+                  width: 100%;
+                  margin-top: 20px;
+                  padding: 0 0 15px 0;
+                  border-radius: 15px;
+                  transition: all 1s;
+                  border-left: 2px solid gold;
+                  border-right: 2px solid gold;
+
+                  display: none;
+                  align-items: center;
+                  justify-content: space-evenly;
+               }
+                  
+                  .left_panel {
+                     width: 45%;
+                     padding: 0 20px;
+                     transition: all 1s;
+                  }
+                     .left_panel h1 {
+                        margin: 0;
+                        width: 100%;
+                        transition: all 1s;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                     }
+                     .left_panel p {
+                        width: 100%;
+                        font-size: 16px;
+                        text-indent: 10%;
+                        transition: all 1s;
+                     }
+                        .left_panel p b{
+                           font-size: 20px;
+                           text-indent: 10%;
+                           color: rgb(48, 93, 98);
+                        }
+                     .left_panel ul {
+                        width: 90%;
+                        
+                        gap: 10px;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                     }
+
+                  .right_panel {
+                     width: 45%;
+                     padding: 0 20px;
+                     transition: all 1s;
+                  }
+                     .right_panel h1 {
+                        margin: 0;
+                        width: 100%;
+                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                     }
+                     .right_panel h2 {
+                        font-size: 16px;
+                        color: rgb(48, 93, 98);
+                     }
+                     .right_panel p {
+                        width: 100%;
+                        font-size: 16px;
+                     }
+                        .right_panel p b {
+                           color: rgb(48, 93, 98);
+                        }
+                     
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */
