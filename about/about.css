@@ -217,91 +217,176 @@ body {
       }
    .content {
       width: 100%;
-      height: 380px;
+      height: fit-content;
       padding: 0 0;
 
-      gap: 20px;
       display: flex;
-      justify-content: space-evenly;
+      align-items: center;
+      justify-content: center;
    }
-      .left {
-         width: 40%;
-
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-         justify-content: space-evenly;
+      .content_subcontainer{
+         width: 90%;
+         margin: 50px 0 50px 0;
+         padding: 10px 15px;
       }
-         .left h1 {
-            margin: 0;
-            width: 80%;
-            cursor: pointer;
-            font-size: 35px;
-            font-weight: 400;
-            padding: 10px 15px;
-            font-family: Georgia, "Times New Roman", Times, serif;
-
+         .left {
+            width: 50%;
+            float: left;
+            margin-right: 60px;
+            margin-bottom: 60px;
+            
             display: flex;
-            align-items: center;
-            justify-content: center;
-         }
-            .left h1:hover {
-               color: goldenrod;
-               transition: all 0.2s;
-               border-bottom: 2px solid teal;
-            }
-      .right {
-         width: 50%;
-
-         display: flex;
-         align-items: center;
-         flex-direction: column;
-         justify-content: center;
-
-         position: relative;
-      }
-         .right h1 {
-            top: 15px;
-            color: teal;
-            position: absolute;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-         }
-         .right p {
-            margin: 0;
-            font-size: 19px;
-            line-height: 2rem;
-            text-indent: 10%;
-            font-family: Georgia, "Times New Roman", Times, serif;
-
-            display: flex;
-            align-items: center;
+            align-items: flex-start;
             flex-direction: column;
-            justify-content: space-between;
-
-            position: absolute;
+            justify-content: start;
          }
-            #content1 {
-               opacity: 1;
-               z-index: 1;
-               display: flex;
-               transition: all 0.5s;
+            .left img {
+               width: 100%;
 
-            }
-            #content2 {
-               opacity: 0;
-               z-index: 2;
                display: flex;
-               transition: all 0.5s;
+               align-items: center;
+               justify-content: center;
             }
-            #content3 {
-               opacity: 0;
-               z-index: 3;
+            .left p {
+               margin: 0;
+               width: 100%;
+               opacity: .55;
+               font-size: 20px;
+               font-weight: 400;
+               color: #233547;
+               font-style: normal;
+               font-family: 'Montserrat', sans-serif;
+            }
+         .right {
+            width: 100%;
+         }
+            .company_description {
+               font-size: 16px;
+               line-height: 1.6;
+               text-align: justify;
+               margin: 0 15px 25px 0;
+            }
+               .company_description b {
+                  font-size: 17px;
+                  font-weight: 500;
+                  color: rgb(15, 14, 84);
+               }
+   .mission_container {
+      width: 100%;
+      height: fit-content;
+   }
+      .mission {
+         width: 100%;
+         height: 500px;
+         margin: 0;
+         background: linear-gradient(
+            to right, 
+            rgba(255, 255, 255, 0) 30%,
+            rgb(255, 255, 255) 50%
+            ), 
+            url(../photos/compass.jpg) no-repeat;
+         background-size: cover;
+         background-position-y: -150px;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+         .mission_left {
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+            .mission_left p{
+               width: 100%;
+               color: white;
+               font-size: 45px;
+               font-weight: 700;
+               letter-spacing: 0.3rem;
+               text-shadow: rgb(0, 0, 0) -3px 3px 5px;
+
                display: flex;
-               transition: all 0.5s;
+               align-items: center;
+               justify-content: center;
+            }
+         .mission_right {
+            width: 45%;
+            padding: 15px;
+            margin: 0 40px 0 0;
+         }
+            .mission_right p {
+               font-size: 16px;
+               line-height: 1.6;
+               font-weight: 400;
+               text-indent: 10%;
+               letter-spacing: 0.4px;
+               color: rgb(48, 93, 98);
+               font-family: 'Montserrat', sans-serif;
+               text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+            }
+   .values_container {
+      width: 100%;
+      height: fit-content;
+   }
+      .values {
+         width: 100%;
+         height: 400px;
+         margin: 0 0 50px 0;
+         background: linear-gradient(
+            to left, 
+            rgba(255, 255, 255, 0) 30%,
+            rgb(255, 255, 255) 50%
+            ), 
+            url(../photos/map.jpg) no-repeat;
+         background-size: cover;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+         .values_right {
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+            .values_right p{
+               width: 100%;
+               color: white;
+               font-size: 45px;
+               font-weight: 700;
+               letter-spacing: 0.3rem;
+               text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+         .values_left {
+            width: 45%;
+            margin: 0 0 0 40px;
+            padding: 15px;
+         }
+            .values_left p {
+               font-size: 16px;
+               line-height: 1.6;
+               font-weight: 400;
+               text-indent: 10%;
+               letter-spacing: 0.4px;
+               color: rgb(48, 93, 98);
+               font-family: 'Montserrat', sans-serif;
+               text-shadow: rgb(255, 255, 255) 2px 2px 5px;
             }
    .specialization {
       width: 100%;
+      padding: 0 0 100px 0;
       height: fit-content;
+      background-image: linear-gradient(white, #d6e4ee);
 
       display: flex;
       align-items: center;
@@ -311,7 +396,8 @@ body {
       .special_navbar {
          width: 100%;
          height: 70px;
-         border: 1px solid gold;
+         border-top: 1px solid gold;
+         border-bottom: 1px solid gold;
 
          display: flex;
          align-items: center;
@@ -361,9 +447,16 @@ body {
             justify-content: center;
          }
             .visa_categories_subtitle {
-               text-indent: 10%;
+               width: 75%;
+               font-size: 25px;
+               font-weight: 400;
+               text-align: center;
                font-family: Georgia, 'Times New Roman', Times, serif;
             }
+               .visa_categories_subtitle b {
+                  font-size: 30px;
+                  color: rgb(48, 93, 98);
+               }
             .content_header {
                width: 100%;
                padding: 15px 0;
@@ -408,6 +501,7 @@ body {
                      font-size: 29px;
                      transition: all 0.5s;
                      color: rgb(48, 93, 98);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
 
                      display: flex;
                      align-items: center;
@@ -707,7 +801,6 @@ body {
                         .right_panel p b {
                            color: rgb(48, 93, 98);
                         }
-                     
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */

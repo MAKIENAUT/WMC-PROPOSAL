@@ -13,7 +13,7 @@
 	<title>About Us</title>
 </head>
 
-<body onload="valueChecker(), selector();">
+<body onload="selector();">
 	<!-- NAVBAR START -->
 	<nav class="navbar" id="myNavBar">
 		<div class="logo_holder">
@@ -50,46 +50,58 @@
 		</header>
 
 		<div class="content">
-			<div class="left">
-				<h1 id="who" onclick="showContent1()">
-					Who We Are
-				</h1>
-				<h1 id="what" onclick="showContent2()">
-					What We Are
-				</h1>
-				<h1 id="who_2" onclick="showContent3()">
-					What We Do
-				</h1>
-			</div>
-			<div class="right">
-				<h1 id="content_title">Who We Are</h1>
-				<p id="content1">
-					West Migration Agency ("WMA") is a minority and women-owned and
-					operated, consulting and recruiting firm in California. The founders
-					lead our diverse and dynamic business, bringing their years of legal
-					experience credentials to support individuals throughout their
-					migration and employment journey. We search for career opportunities
-					among our approved, designated list of sponsors and curate every
-					detail for career enhancement and development.
-				</p>
-				<p id="content2">
-					WMA is a focused service consulting firm supporting Temporary Employment Visas (H, L, O, P, Q) and
-					Exchange Visitor Visa (J). WMA acts as a liaison between the clients ("qualified applicants") and
-					employers. We are looking for exceptional individuals ready to share their culture and experience in the
-					United States.
-				</p>
-				<p id="content3">
-					WMA will help you organize the program you are interested in and find a suitable program applicable to
-					you. We understand the drive and self-investment required to take this big step as we play an essential
-					role in advising and corresponding with applicants on various topics, including requirements at various
-					stages, relevant documentation, and adjustments needed to have a pleasant experience living and working
-					in the United States. We believe great mentors affect and bring out great leaders in the future. We want
-					to make a difference in people's lives by streamlining the complex process and navigating the
-					ever-evolving world of international programs.
-				</p>
+			<div class="content_subcontainer">
+				<div class="left">
+					<img src="../photos/wma-logo.png" alt="">
+					<p>Company Description</p>
+				</div>
+				<div class="right">
+					<p class="company_description">
+						<b>West Migration Agency ("WMA")</b> is a minority and women-owned and operated, consulting and recruiting firm in California. The founders lead our diverse and dynamic business, bringing their years of legal experience credentials to support individuals throughout their migration and employment journey. We search for career opportunities among our approved, designated list of sponsors and curate every detail for career enhancement and development.
+					</p>
+					<p class="company_description">
+						<b>
+							WMA is a focused service consulting firm supporting Temporary Employment Visas (H, L, O, P, Q) and Exchange Visitor Visa (J). WMA acts as a liaison between the clients ("qualified applicants") and employers. We are looking for exceptional individuals ready to share their culture and experience in the United States.
+						</b>
+					</p>
+					<p class="company_description">
+						WMA will help you organize the program you are interested in and <b>find a suitable program applicable to you</b>. We understand the drive and self-investment required to take this big step as we play an essential role in advising and corresponding with applicants on various topics, including requirements at various stages, relevant documentation, and adjustments needed to have a pleasant experience living and working in the United States. We believe great mentors affect and bring out great leaders in the future. <b>We want to make a difference in people's lives</b> by streamlining the complex process and navigating the ever-evolving world of international programs.
+					</p>
+				</div>
 			</div>
 		</div>
 
+		<div class="mission_container">
+			<div class="mission">
+				<div class="mission_left">
+					<p>Our Mission</p>
+				</div>
+				<div class="mission_right">
+					<p>
+						There are more than <b>20 nonimmigrant visa types</b> for people traveling to the United States temporarily. Likewise, there are many more types of immigrant visas for those coming to live permanently in the United States. Please refer to Types of Visa so we can determine the appropriate visa for you.
+					</p>
+					<p>
+						We are committed to <b>providing our clients expert guidance</b> on their migration journey. We center our goals around the lives of people seeking pursuits that align with their core beliefs. At West Migration Agency, we study every application that is received, and determine whether each client is a highly-skilled, unskilled, or low-skilled worker. As long as a client is qualified, <b>we will find a suitable sponsor</b> for the client. We encourage qualified applicants to communicate directly with us in order to address any concerns that they might have. We also regularly work closely with sponsors, assisting them in ensuring reliable and committed candidates. 
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="values_container">
+			<div class="values">
+				<div class="values_left">
+					<p>
+						At West Migration Agency, our <b>diverse culture</b> drives our success, and we empower clients to pursue their dreams and seize opportunities.
+					</p>
+					<p>
+						"WMA" was created with a solid belief in <b>professional growth</b> and the pursuit of different career paths. The United States is a leader in global innovation and therefore offers wonderful opportunities for those with relevant experience. Moreover, the US has one of the highest standards of living among developed countries and is the largest economy in the world. <b>We invite you to</b> contact us to see if we can help you achieve your goals and dreams of a better future. 
+					</p>
+				</div>
+				<div class="values_right">
+					<p>Our Values</p>
+				</div>
+			</div>
+		</div>
 
 		<div class="specialization">
 			<div class="special_navbar">
@@ -113,10 +125,10 @@
 			</div>
 			<div class="content_section">
 				<div class="visa_categories" id="visa_categories">
-					<h2 class="visa_categories_subtitle">
+					<p class="visa_categories_subtitle">
 						West Migration Agency LLC  ("WMA") assists noncitizens to join the U.S labor market for any Immigrant and Nonimmigrant Visas. WMA will help you explore the most common types of U.S work visas and the eligibility criteria for each. <br><br>
-						Find the right visa for you.
-					</h2>
+						<b>Find the right visa for you.</b>
+					</p>
 					<div class="content_header">
 						<div class="content_head" onclick="reveal_body1()">
 							<h1 class="h1"><i class="fa-solid fa-passport"></i>H-1B</h1>
