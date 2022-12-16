@@ -255,7 +255,7 @@ body {
                font-weight: 400;
                color: #233547;
                font-style: normal;
-               font-family: Montserrat;
+               font-family: 'Montserrat', sans-serif;
             }
          .right {
             width: 100%;
@@ -278,23 +278,23 @@ body {
       .mission {
          width: 100%;
          height: 500px;
+         margin: 0;
          background: linear-gradient(
             to right, 
-            rgba(255, 255, 255, 0) 50%,
-            rgb(255, 255, 255) 100%
+            rgba(255, 255, 255, 0) 30%,
+            rgb(255, 255, 255) 50%
             ), 
             url(../photos/compass.jpg) no-repeat;
          background-size: cover;
          background-position-y: -150px;
 
          display: flex;
-         align-items: flex-start;
+         align-items: center;
          justify-content: space-between;
       }
          .mission_left {
             width: 50%;
             height: 100%;
-            border: 1px solid white;
 
             display: flex;
             align-items: center;
@@ -306,17 +306,87 @@ body {
                font-size: 45px;
                font-weight: 700;
                letter-spacing: 0.3rem;
-               text-shadow: 10px 10px 10px #000000;
+               text-shadow: rgb(0, 0, 0) -3px 3px 5px;
 
                display: flex;
                align-items: center;
                justify-content: center;
             }
-   
-   .specialization {
+         .mission_right {
+            width: 45%;
+            padding: 15px;
+            margin: 0 40px 0 0;
+         }
+            .mission_right p {
+               font-size: 16px;
+               line-height: 1.6;
+               font-weight: 400;
+               text-indent: 10%;
+               letter-spacing: 0.4px;
+               color: rgb(48, 93, 98);
+               font-family: 'Montserrat', sans-serif;
+               text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+            }
+   .values_container {
       width: 100%;
       height: fit-content;
-      background-image: linear-gradient(#d6e4ee, white);
+   }
+      .values {
+         width: 100%;
+         height: 400px;
+         margin: 0 0 50px 0;
+         background: linear-gradient(
+            to left, 
+            rgba(255, 255, 255, 0) 30%,
+            rgb(255, 255, 255) 50%
+            ), 
+            url(../photos/map.jpg) no-repeat;
+         background-size: cover;
+
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+      }
+         .values_right {
+            width: 50%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+            .values_right p{
+               width: 100%;
+               color: white;
+               font-size: 45px;
+               font-weight: 700;
+               letter-spacing: 0.3rem;
+               text-shadow: rgb(0, 0, 0) 3px 3px 5px;
+
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+         .values_left {
+            width: 45%;
+            margin: 0 0 0 40px;
+            padding: 15px;
+         }
+            .values_left p {
+               font-size: 16px;
+               line-height: 1.6;
+               font-weight: 400;
+               text-indent: 10%;
+               letter-spacing: 0.4px;
+               color: rgb(48, 93, 98);
+               font-family: 'Montserrat', sans-serif;
+               text-shadow: rgb(255, 255, 255) 2px 2px 5px;
+            }
+   .specialization {
+      width: 100%;
+      padding: 0 0 100px 0;
+      height: fit-content;
+      background-image: linear-gradient(white, #d6e4ee);
 
       display: flex;
       align-items: center;
@@ -377,9 +447,16 @@ body {
             justify-content: center;
          }
             .visa_categories_subtitle {
-               text-indent: 10%;
+               width: 75%;
+               font-size: 25px;
+               font-weight: 400;
+               text-align: center;
                font-family: Georgia, 'Times New Roman', Times, serif;
             }
+               .visa_categories_subtitle b {
+                  font-size: 30px;
+                  color: rgb(48, 93, 98);
+               }
             .content_header {
                width: 100%;
                padding: 15px 0;
@@ -424,6 +501,7 @@ body {
                      font-size: 29px;
                      transition: all 0.5s;
                      color: rgb(48, 93, 98);
+                     font-family: Georgia, 'Times New Roman', Times, serif;
 
                      display: flex;
                      align-items: center;
