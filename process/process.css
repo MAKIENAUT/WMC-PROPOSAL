@@ -518,7 +518,7 @@ p {
   font-size: 20px;
 }
 .content1 {
-  display: none;
+  display: flex;
   flex-flow: row nowrap;
   width: 75%;
   height: 100%;
