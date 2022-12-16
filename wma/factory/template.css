@@ -11,7 +11,7 @@ body {
    height: 60px;
    background-size: cover;
    background-position-y: -100px;
-   background-image: url(/photos/silk.jpg);
+   background-image: url(../photos/silk.jpg);
    
    top: 0;
    left: 0;
@@ -207,7 +207,7 @@ footer {
    border-top: 2px solid rgb(48, 93, 98);
    background-size: cover;
    background-position-y: -100px;
-   background-image: url(/photos/silk.jpg);
+   background-image: url(../photos/silk.jpg);
 }
    .footer_container {
       width: 100%;
@@ -356,3 +356,158 @@ footer {
             }
 
 /* FOOTER BAR -END- */
+
+
+/* FOOTER RESPONSIVE DESIGN */
+
+      @media screen and (max-width: 600px) {
+            footer {
+               width: 100%;
+               height: 245px;
+               
+
+           
+               position: relative;
+            
+               display: flex;
+               align-items: center;
+            }
+            .footer_container {
+               width: 50%;
+               
+               padding-right: 15px;
+               padding-left: 15px;
+              
+              
+         
+               position: absolute;
+               display: flex;
+               align-items: center;
+               flex-direction: row;
+               justify-content: space-between;
+               
+               
+
+               
+            }
+            .logo_container {
+             display: none;
+
+      
+            }
+            .logo_container img {
+               display: none;
+            }
+            .logo_container p {
+               width: 100%;
+               
+               display: flex;
+               position: absolute;
+               bottom: 0px;
+               text-align: center;
+              
+            }
+            .about_links {
+               width: 25%;
+               height: 65%;
+               
+               
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               text-align: center;
+            }
+                  .about_title {
+               
+                  
+                  
+                     position: absolute;
+                     
+                     top: -5px;
+                     gap: 50px;
+                     padding-left: 30px;
+                     padding-right: 50px;
+                     justify-content: center;
+                     text-align: justify;
+                     display: flex;
+                     align-items: center;
+                     white-space: wrap;
+                     
+                     
+
+                  }
+                  .about_links_container {
+                     width: 30%;
+                     height: 65%;
+                     
+                     gap: 10px;
+                     
+
+                     position: absolute;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                  
+               }
+                  .company_links {
+                     font-size: 15px;
+                     text-indent: 10px;
+                     text-decoration: none;
+                     color: rgb(48, 93, 98);
+                     font-family: "Montserrat", sans-serif;
+
+                     
+                    
+                  }
+                  .socials {
+                     width: 20%;
+                     
+                     
+                     display: inline-block;
+                     vertical-align: bottom;
+                     align-items: center;
+                     justify-content: center;
+                     
+                  }
+                  .socials-container {
+                     width: 100%;
+                     padding: 5px 0 5px 0;
+                     
+                     position: absolute;
+                     left: 50px;
+                     bottom: -10px;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-evenly;
+                     }
+                  .socials-container a, button {
+                     font-size: 30px;
+                     }
+                  .contact_info {
+                     width: 30%;
+                     height: 65%;
+                     
+                     top: 5px;
+                     gap: 10px;
+                     display: flex;
+                     flex-direction: column;
+                     justify-content: center;
+                  }
+                  .contact_info h4 {
+                      
+                     font-size: 15px;
+                     position: relative;
+                        
+                        
+                        
+                     }
+                  .contact_info p{
+                       
+                     font-size: 13px;
+                     position: relative;
+                        
+                     }
+                       
+
+      }   
+/* FOOTER RESPONSIVE -END- */
