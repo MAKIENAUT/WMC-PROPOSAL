@@ -1,6 +1,6 @@
 FOR MODIFICATION (According to Sir Jan) + (According to Ma'am Mimi) {
    1. OVER-ALL {
-      bahog bilat
+
       > Make all pages mobile responsive
 
       > For reusable code, make a folder named "factory" {
