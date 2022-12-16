@@ -1,0 +1,18 @@
+
+FOR MODIFICATION (According to Sir Jan) {
+   1. OVER-ALL {
+      > Make all pages mobile responsive
+      > For reusable code, make a folder named "factory" {
+         > HEADER / NAV BAR
+         > FOOTER {
+            - align logos horizontally.
+            - put 'ABOUT US' sections listed in the footer. (refer to https://simplyearth.com/)
+         }
+      }
+   }
+
+   HOME {
+      
+   }
+}
+
