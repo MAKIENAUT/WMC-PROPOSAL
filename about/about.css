@@ -299,6 +299,40 @@ body {
                display: flex;
                transition: all 0.5s;
             }
+.mission {
+   width: 100%;
+   height: fit-content;
+   background-color: #d6e4ee;
+
+}
+   .mission_container {
+      width: 100%;
+      height: fit-content;
+      background-image: linear-gradient(#f7f7f7, #d6e4ee);
+
+   
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+      .mission_left {
+         width: 45%;
+         border: 1px solid red;
+      }
+         .mission_left h1 {
+            color: #233547;
+            font-size: 3.1rem;
+            font-family: 'Montserrat',sans-serif;
+         }
+      .mission_right {
+         width: 45%;
+         border: 1px solid red;
+      }
+         .mission_right img {
+            border-radius: 50%;
+            width: 60%;
+         }
+   
    .specialization {
       width: 100%;
       height: fit-content;
@@ -707,7 +741,6 @@ body {
                         .right_panel p b {
                            color: rgb(48, 93, 98);
                         }
-                     
 /* CONTENT -END- */
 
 /* FOOTER BAR -START- */
