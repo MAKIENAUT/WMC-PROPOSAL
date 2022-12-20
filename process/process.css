@@ -557,6 +557,10 @@ p {
   color: white;
   background-color: #ffb03ab4;
 }
+
+/* SECTION RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+}
 /* SECTION DESIGN END */
 
 /* FOOTER BAR -START- */
