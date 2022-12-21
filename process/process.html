@@ -14,7 +14,7 @@
 </head>
 
 <body>
-   <!-- NAVBAR START -->
+   <!-- NAVBAR SECTION  [ START ] -->
    <nav class="navbar" id="myNavBar">
       <div class="logo_holder">
          <a class="nav_logo" href="https://westmigrationagency.com/">
@@ -39,8 +39,9 @@
          <i class="fa fa-bars"></i>
       </a>
    </nav>
-   <!-- NAVBAR END -->
+   <!-- NAVBAR SECTION  [ END ] -->
 
+   <!-- CONTENT SECTION [ START ] -->
    <section>
       <div class="section_container">
          <div class="title_image">
@@ -48,6 +49,7 @@
             <h1>Program Process</h1>
          </div>
          <div class="consultation_content">
+            <!-- TOP SECTION [START] -->
             <div class="content">
                <div class="content_title">
                   <h2>Consultation Process</h2>
@@ -69,12 +71,16 @@
                   </p>
                </div>
             </div>
+            <!-- TOP SECTION [END] -->
+
+            <!-- HOW TO APPLY SECTION [START] -->
             <div class="how_to_content">
                <div class="steps_title">
                   <h1>HOW TO APPLY:</h1>
                   <h2>"THE EXCHANGE VISITOR PROGRAM"</h2>
                </div>
                <div class="steps_container">
+                  <!-- STEP 1 -->
                   <div class="steps_odd">
                      <h1>1</h1>
                      <p>
@@ -84,6 +90,7 @@
                      </p>
                   </div>
 
+                  <!-- STEP 2 -->
                   <div class="steps_even">
                      <p>
                         Contact the Client Service Relation directly to participate in one
@@ -93,6 +100,7 @@
                      <h1>2</h1>
                   </div>
 
+                  <!-- STEP 3 -->
                   <div class="steps_odd">
                      <h1>3</h1>
                      <p>
@@ -101,6 +109,7 @@
                      </p>
                   </div>
 
+                  <!-- STEP 4 -->
                   <div class="steps_even">
                      <p>
                         WMA will contact the qualified candidates and discuss the
@@ -112,6 +121,7 @@
                      <h1>4</h1>
                   </div>
 
+                  <!-- STEP 5 -->
                   <div class="steps_odd">
                      <h1>5</h1>
                      <p>
@@ -120,6 +130,7 @@
                      </p>
                   </div>
 
+                  <!-- STEP 6 -->
                   <div class="steps_even">
                      <p>
                         Pay the SEVIS (Student and Exchange Visitor Information
@@ -130,6 +141,7 @@
                      <h1>6</h1>
                   </div>
 
+                  <!-- STEP 7 -->
                   <div class="steps_odd">
                      <h1>7</h1>
                      <p>
@@ -142,6 +154,7 @@
                      </p>
                   </div>
 
+                  <!-- STEP 8 -->
                   <div class="steps_even">
                      <p>
                         After you pay the visa application fee, schedule your
@@ -152,6 +165,7 @@
                      <h1>8</h1>
                   </div>
 
+                  <!-- STEP 9 -->
                   <div class="steps_odd">
                      <h1>9</h1>
                      <p>
@@ -167,6 +181,7 @@
                      </p>
                   </div>
 
+                  <!-- STEP 10 -->
                   <div class="steps_even">
                      <p>
                         The interviewing officer will inform you at the end of the
@@ -179,341 +194,173 @@
                   </div>
                </div>
             </div>
+            <!-- HOW TO APPLY SECTION [END] -->
+
 
             <div class="timeline">
                <div class="timeline_content">
+
                   <div class="timeline_title">
                      <h1>Timeline of Application</h1>
                   </div>
-                  <div class="content_buttons">
-                     <div class="button1">
-                        <h1>Pre-qualification</h1>
-                        <a href="">1</a>
+
+                  <div class="timeline_container">
+                     <div class="progressbar_container">
+
+                        <div class="number_top">
+                           <p id="step1">Pre-Qualification</p>
+                           <p></p>
+                           <p id="step3">License</p>
+                           <p></p>
+                           <p id="step5">Departure and Arrival </p>
+                        </div>
+
+                        <div class="progressbar_content">
+                           <div 
+                              id="prog1" 
+                              class="prog1" 
+                              onclick="showContent(1)"
+                              onmouseout="revertStep(0)"
+                              onmouseover="highlightStep(1)">
+                              1
+                           </div>
+                           <span class="divider"></span>
+                           <div 
+                              id="prog2" 
+                              class="prog2" 
+                              onclick="showContent(2)"
+                              onmouseout="revertStep(0)"
+                              onmouseover="highlightStep(2)">
+                              2
+                           </div>
+                           <span class="divider"></span>
+                           <div 
+                              id="prog3" 
+                              class="prog3" 
+                              onclick="showContent(3)"
+                              onmouseout="revertStep(0)"
+                              onmouseover="highlightStep(3)">
+                              3
+                           </div>
+                           <span class="divider"></span>
+                           <div 
+                              id="prog4" 
+                              class="prog4" 
+                              onclick="showContent(4)"
+                              onmouseout="revertStep(0)"
+                              onmouseover="highlightStep(4)">
+                              4
+                           </div>
+                           <span class="divider"></span>
+                           <div 
+                              id="prog5" 
+                              class="prog5"
+                              onclick="showContent(5)"
+                              onmouseout="revertStep(0)" 
+                              onmouseover="highlightStep(5)">
+                              5
+                           </div>
+                        </div>
+
+                        <div class="number_bottom">
+                           <p></p>
+                           <p id="step2">Interview</p>
+                           <p></p>
+                           <p id="step4">Visa and Immigration</p>
+                           <p></p>
+                        </div>
+
                      </div>
-                     <div class="button2">
-                        <a href="">2</a>
-                        <h1>Interview</h1>
-                     </div>
-                     <div class="button3">
-                        <h1>License</h1>
-                        <a href="">3</a>
-                     </div>
-                     <div class="button4">
-                        <a href="">4</a>
-                        <h1>Visa & Immigration</h1>
-                     </div>
-                     <div class="button5">
-                        <h1>Departure (Home) and Arrival (USA)</h1>
-                        <a href="">5</a>
+
+                     <div class="step_cards">
+                        <div class="content1" id="content1">
+                           <div class="left">
+                              <h1>1. Pre-Qualification</h1>
+                              <p>
+                                 Our Referral/Talent Acquisition Manager performs this initial
+                                 stage and communicates directly. She/He/They will be in charge of
+                                 determining current applicant needs and producing forecasts; She
+                                 will screen resumes; Plan and conduct the recruitment and
+                                 selection process (interviews, screening calls, etc.); She is also
+                                 going to verify all credentials such as CV diplomas and
+                                 transcripts and employment history.
+                              </p>
+                           </div>
+                           <div class="right">
+                              <i class="fa-solid fa-xmark" onclick="hideContent('none')"></i>
+                           </div>
+                        </div>
+                        <div class="content2" id="content2">
+                           <div class="left">
+                              <h1>2. Interview</h1>
+                              <p>
+                                 In the second stage, we will learn about candidates' experience
+                                 with teaching, including correspondence with the client and a good
+                                 understanding of employment and expectation in working abroad; Job
+                                 Offers from Sponsors (school) and Post-Interview with the offered
+                                 position. Candidates should have good analytical and
+                                 decision-making skills to interpret and act on essential roles
+                                 given by the sponsors.
+                              </p>
+                           </div>
+                           <div class="right">
+                              <i class="fa-solid fa-xmark" onclick="hideContent('none')"></i>
+                           </div>
+                        </div>
+                        <div class="content3" id="content3">
+                           <div class="left">
+                              <h1>3. License</h1>
+                              <p>
+                                 Once you are in our program, we will facilitate the evaluation of
+                                 your academic documents with a USA-based Evaluator. We will also
+                                 provide you with other resources to learn about foreign academic
+                                 credentials; Fingerprints Clearance and US License Application.
+                              </p>
+                           </div>
+                           <div class="right">
+                              <i class="fa-solid fa-xmark" onclick="hideContent('none')"></i>
+                           </div>
+                        </div>
+                        <div class="content4" id="content4">
+                           <div class="left">
+                              <h1>4. Visa and Immigration</h1>
+                              <p>
+                                 We will guide you through all the following steps regarding
+                                 completing the visa application and documents, scheduling a visa
+                                 interview appointment, Preparing for your visa interview.
+                              </p>
+                           </div>
+                           <div class="right">
+                              <i class="fa-solid fa-xmark" onclick="hideContent('none')"></i>
+                           </div>
+                        </div>
+                        <div class="content5" id="content5">
+                           <div class="left">
+                              <h1>5. Departure (Home) and Arrival (USA)</h1>
+                              <p>
+                                 You will need some critical documents right when you enter the
+                                 country, others only after you arrive. But once you're in the
+                                 United States, obtaining records from the authorities back home
+                                 will be tedious. Therefore, you should check everything carefully
+                                 before you go. Some sponsors are present once you land at the
+                                 airport.
+                              </p>
+                           </div>
+                           <div class="right">
+                              <i class="fa-solid fa-xmark" onclick="hideContent('none')"></i>
+                           </div>
+                        </div>
                      </div>
                   </div>
-                  <div class="second_content">
-                     <div class="content1">
-                        <div class="left">
-                           <h1>1. Pre-Qualification</h1>
-                           <p>
-                              Our Referral/Talent Acquisition Manager performs this
-                              initial stage and communicates directly. She/He/They will
-                              be in charge of determining current applicant needs and
-                              producing forecasts; She will screen resumes; Plan and
-                              conduct the recruitment and selection process (interviews,
-                              screening calls, etc.); She is also going to verify all
-                              credentials such as CV diplomas and transcripts and
-                              employment history.
-                           </p>
-                        </div>
-                        <div class="right">
-                           <img src="../photos/staircase6.jpg" />
-                        </div>
-                     </div>
-                     <div class="content2">
-                        <div class="left">
-                           <h1>2. Interview</h1>
-                           <p>
-                              In the second stage, we will learn about candidates’
-                              experience with teaching, including correspondence with
-                              the client and a good understanding of employment and
-                              expectation in working abroad; Job Offers from Sponsors
-                              (school) and Post-Interview with the offered position.
-                              Candidates should have good analytical and decision-making
-                              skills to interpret and act on essential roles given by
-                              the sponsors.
-                           </p>
-                        </div>
-                        <div class="right">
-                           <img src="../photos/staircase6.jpg" />
-                        </div>
-                     </div>
-                     <div class="content3">
-                        <div class="left">
-                           <h1>3. License</h1>
-                           <p>
-                              Once you are in our program, we will facilitate the
-                              evaluation of your academic documents with a USA-based
-                              Evaluator. We will also provide you with other resources
-                              to learn about foreign academic credentials; Fingerprints
-                              Clearance and US License Application.
-                           </p>
-                        </div>
-                        <div class="right">
-                           <img src="../photos/staircase6.jpg" />
-                        </div>
-                     </div>
-                     <div class="content4">
-                        <div class="left">
-                           <h1>4. Visa and Immigration</h1>
-                           <p>
-                              We will guide you through all the following steps
-                              regarding completing the visa application and documents,
-                              scheduling a visa interview appointment, Preparing for
-                              your visa interview.
-                           </p>
-                        </div>
-                        <div class="right">
-                           <img src="../photos/staircase6.jpg" />
-                        </div>
-                     </div>
-                     <div class="content5">
-                        <div class="left">
-                           <h1>5. Departure (Home) and Arrival (USA)</h1>
-                           <p>
-                              You will need some critical documents right when you enter
-                              the country, others only after you arrive. But once you’re
-                              in the United States, obtaining records from the
-                              authorities back home will be tedious. Therefore, you
-                              should check everything carefully before you go. Some
-                              sponsors are present once you land at the airport.
-                           </p>
-                        </div>
-                        <div class="right">
-                           <img src="../photos/staircase6.jpg" />
-                        </div>
-                     </div>
-                  </div>
+                  
                </div>
             </div>
-            <div class="steps_container">
-              <div class="steps_odd">
-                <h1>1</h1>
-                <p>
-                  Determine which program is right for you. See the program
-                  requirements comparison chart for an overview of each program
-                  category - Interest Form
-                </p>
-              </div>
-
-              <div class="steps_even">
-                <p>
-                  Contact the recruiting manager directly to participate in one
-                  exchange program. WMA will provide the applicant with specific
-                  information and application requirements.
-                </p>
-                <h1>2</h1>
-              </div>
-
-              <div class="steps_odd">
-                <h1>3</h1>
-                <p>
-                  Sponsors are responsible for selecting candidates and
-                  supporting and monitoring them during their entire program.
-                </p>
-              </div>
-
-              <div class="steps_even">
-                <p>
-                  WMA will contact the qualified candidates and discuss the
-                  participant's program fees. Fees may vary from sponsor to
-                  sponsor and selective state. Candidates will receive a
-                  breakdown of all costs and expenses from sponsors before
-                  committing to a program.
-                </p>
-                <h1>4</h1>
-              </div>
-
-              <div class="steps_odd">
-                <h1>5</h1>
-                <p>
-                  If you are accepted into an exchange program, the sponsor will
-                  issue you a Form DS-2019.
-                </p>
-              </div>
-
-              <div class="steps_even">
-                <p>
-                  Pay the SEVIS (Student and Exchange Visitor Information
-                  System) fee at
-                  <a href="http://www.fmjfee.com."> www.fmjfee.com. </a>
-                  Please retain a receipt for your records.
-                </p>
-                <h1>6</h1>
-              </div>
-
-              <div class="steps_odd">
-                <h1>7</h1>
-                <p>
-                  Go to the U.S Department of State website
-                  <a href="ceac.state.gov/genniv">ceac.state.gov/genniv</a> to
-                  fill out an Online Nonimmigrant Visa Application Form DS-160
-                  and pay the visa application fee of $160.00 Consult the
-                  website of the U.S embassy or consulate where you plan to
-                  apply for instructions on how to pay.
-                </p>
-              </div>
-
-              <div class="steps_even">
-                <p>
-                  After you pay the visa application fee, schedule your
-                  interview- the earlier the better! Consult the website of the
-                  U.S embassy or consulate where you plan to apply for
-                  instructions on how to schedule it.
-                </p>
-                <h1>8</h1>
-              </div>
-
-              <div class="steps_odd">
-                <h1>9</h1>
-                <p>
-                  On the day of your interview, bring the following documents:
-                  <br />
-                  • An original DS-2019 form, Form DS-160 confirmation page
-                  <br />
-                  • Passport <br />
-                  • Photo and visa application fee receipt <br />
-                  • Consult the website of the U.S embassy or consulate where
-                  you plan to apply to check whether additional documents are
-                  needed.
-                </p>
-              </div>
-
-              <div class="steps_even">
-                <p>
-                  The interviewing officer will inform you at the end of the
-                  interview whether your visa is approved or denied. If
-                  approved, the interviewing officer will tell you when you
-                  should expect to receive your visa. Continue to work with your
-                  sponsor to prepare to travel to the United States
-                </p>
-                <h1>10</h1>
-              </div>
-            </div>
-          </div>
-
-          <div class="timeline">
-            <div class="timeline_content">
-              <div class="timeline_title">
-                <h1>Timeline of Application</h1>
-              </div>
-              <div class="content_buttons">
-                <div class="button1">
-                  <h1>Pre-qualification</h1>
-                  <a href="">1</a>
-                </div>
-                <div class="button2">
-                  <a href="">2</a>
-                  <h1>Interview</h1>
-                </div>
-                <div class="button3">
-                  <h1>License</h1>
-                  <a href="">3</a>
-                </div>
-                <div class="button4">
-                  <a href="">4</a>
-                  <h1>Visa & Immigration</h1>
-                </div>
-                <div class="button5">
-                  <h1>Departure and Arrival</h1>
-                  <a href="">5</a>
-                </div>
-              </div>
-              <div class="second_content">
-                <div class="content1">
-                  <div class="left">
-                    <h1>1. Pre-Qualification</h1>
-                    <p>
-                      Our Referral/Talent Acquisition Manager performs this
-                      initial stage and communicates directly. She/He/They will
-                      be in charge of determining current applicant needs and
-                      producing forecasts; She will screen resumes; Plan and
-                      conduct the recruitment and selection process (interviews,
-                      screening calls, etc.); She is also going to verify all
-                      credentials such as CV diplomas and transcripts and
-                      employment history.
-                    </p>
-                  </div>
-                  <div class="right">
-                    <img src="../photos/staircase6.jpg" />
-                  </div>
-                </div>
-                <div class="content2">
-                  <div class="left">
-                    <h1>2. Interview</h1>
-                    <p>
-                      In the second stage, we will learn about candidates’
-                      experience with teaching, including correspondence with
-                      the client and a good understanding of employment and
-                      expectation in working abroad; Job Offers from Sponsors
-                      (school) and Post-Interview with the offered position.
-                      Candidates should have good analytical and decision-making
-                      skills to interpret and act on essential roles given by
-                      the sponsors.
-                    </p>
-                  </div>
-                  <div class="right">
-                    <img src="../photos/staircase6.jpg" />
-                  </div>
-                </div>
-                <div class="content3">
-                  <div class="left">
-                    <h1>3. License</h1>
-                    <p>
-                      Once you are in our program, we will facilitate the
-                      evaluation of your academic documents with a USA-based
-                      Evaluator. We will also provide you with other resources
-                      to learn about foreign academic credentials; Fingerprints
-                      Clearance and US License Application.
-                    </p>
-                  </div>
-                  <div class="right">
-                    <img src="../photos/staircase6.jpg" />
-                  </div>
-                </div>
-                <div class="content4">
-                  <div class="left">
-                    <h1>4. Visa and Immigration</h1>
-                    <p>
-                      We will guide you through all the following steps
-                      regarding completing the visa application and documents,
-                      scheduling a visa interview appointment, Preparing for
-                      your visa interview.
-                    </p>
-                  </div>
-                  <div class="right">
-                    <img src="../photos/staircase6.jpg" />
-                  </div>
-                </div>
-                <div class="content5">
-                  <div class="left">
-                    <h1>5. Departure (Home) and Arrival (USA)</h1>
-                    <p>
-                      You will need some critical documents right when you enter
-                      the country, others only after you arrive. But once you’re
-                      in the United States, obtaining records from the
-                      authorities back home will be tedious. Therefore, you
-                      should check everything carefully before you go. Some
-                      sponsors are present once you land at the airport.
-                    </p>
-                  </div>
-                  <div class="right">
-                    <img src="../photos/staircase6.jpg" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
    </section>
+   <!-- CONTENT SECTION [ START ] -->
 
+   <!-- FOOTER SECTION [ START ] -->
    <footer>
       <div class="footer_container">
          <div class="logo_container">
@@ -537,6 +384,7 @@
                <p>415-633-6865</p>
             </div>
          </div>
+
          <div class="about_links">
             <h3 class="about_title">About Us</h3>
             <div class="about_links_container">
@@ -553,6 +401,7 @@
                <a class="company_links" href="">Visa Categories</a>
             </div>
          </div>
+
          <div class="socials">
             <div class="socials-container">
                <div>
@@ -572,8 +421,10 @@
                </div>
             </div>
          </div>
+         
       </div>
    </footer>
+   <!-- FOOTER SECTION [ START ] -->
 </body>
 
 </html>

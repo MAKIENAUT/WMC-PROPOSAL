@@ -19,7 +19,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: space-between;
- }
+}
    .logo_holder {
       width: 25%;
       left: 30px;
