@@ -4,6 +4,7 @@ body {
    width: 100%;
    height: fit-content;
 }
+/* -------------------------------- */
 
 /* NAVIGATION BAR [ START ] */
 
@@ -170,7 +171,7 @@ body {
       }
    }
    /* NAVBAR RESPONSIVE DESIGN [ END ]*/
-
+   
 /* NAVIGATION BAR [END] */
 
 /* -------------------------------- */
@@ -183,18 +184,15 @@ section {
    margin-top: 60px;
    margin-bottom: 2px;
 }
-
 .section_container {
    width: 100%;
    height: fit-content;
 }
-
 .title_image {
    width: 100%;
    height: 300px;
    position: relative;
 }
-
 .title_image img {
    opacity: 0.8;
    width: 100%;
@@ -205,7 +203,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .title_image h1 {
    width: 95%;
    margin: 0;
@@ -219,12 +216,10 @@ section {
    align-items: center;
    justify-content: end;
 }
-
 .consultation_content {
    width: 100%;
    height: fit-content;
 }
-
 .content {
    width: 100%;
    height: 300px;
@@ -232,7 +227,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .content_title {
    width: 45%;
    height: 50px;
@@ -241,7 +235,6 @@ section {
    align-items: center;
    justify-content: start;
 }
-
 .content_title h2 {
    margin: 0;
    width: 100%;
@@ -254,18 +247,15 @@ section {
    align-items: center;
    justify-content: start;
 }
-
 .content_description {
    width: 45%;
 }
-
 .content_description p {
    font-size: 18px;
    text-indent: 10%;
    font-weight: lighter;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .how_to_content {
    width: 100%;
    padding: 20px 0;
@@ -277,7 +267,6 @@ section {
    flex-direction: column;
    justify-content: space-between;
 }
-
 .steps_title {
    width: 100%;
    height: 100px;
@@ -288,7 +277,6 @@ section {
    flex-direction: column;
    justify-content: center;
 }
-
 .steps_title h1 {
    margin: 0;
    width: 50%;
@@ -299,7 +287,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .steps_title h2 {
    margin: 0;
    width: 50%;
@@ -315,7 +302,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .steps_container {
    width: 60%;
    margin-left: 100px;
@@ -326,7 +312,6 @@ section {
    flex-direction: column;
    justify-content: space-evenly;
 }
-
 .steps_odd {
    width: 100%;
    display: flex;
@@ -334,7 +319,6 @@ section {
    display: flex;
    align-items: center;
 }
-
 .steps_odd h1 {
    margin: 0;
    width: 50px;
@@ -347,7 +331,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .steps_odd p {
    margin: 0;
    width: 70%;
@@ -360,7 +343,6 @@ section {
    font-family: "Montserrat", sans-serif;
    background-color: rgba(129, 129, 129, 0.2);
 }
-
 .steps_even {
    width: 100%;
    display: flex;
@@ -369,7 +351,6 @@ section {
    align-items: center;
    justify-content: end;
 }
-
 .steps_even h1 {
    margin: 0;
    width: 50px;
@@ -382,7 +363,6 @@ section {
    align-items: center;
    justify-content: center;
 }
-
 .steps_even p {
    margin: 0;
    width: 70%;
@@ -396,7 +376,6 @@ section {
    font-family: "Montserrat", sans-serif;
    background-color: rgba(129, 129, 129, 0.2);
 }
-
 .timeline {
    width: 100%;
    height: fit-content;
@@ -406,29 +385,24 @@ section {
    flex-direction: column;
    justify-content: center;
 }
-
 .timeline_content {
    width: 100%;
    height: 575px;
    background-size: cover;
    background-position: center;
    background-image: url(../photos/takeoff.jpg);
-
    display: flex;
    align-items: center;
    flex-flow: column nowrap;
    justify-content: flex-start;
 }
-
 .timeline_title {
    width: 50%;
    height: fit-content;
-
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .timeline_title h1 {
    width: 100%;
    padding: 10px 0;
@@ -437,7 +411,6 @@ section {
    height: fit-content;
    letter-spacing: 5px;
    font-family: Georgia, "Times New Roman", Times, serif;
-
    background-clip: text;
    background-image: linear-gradient(60deg,
          rgb(255, 255, 255),
@@ -449,21 +422,17 @@ section {
          rgb(255, 217, 0));
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .timeline_container {
    width: 100%;
    height: 100%;
    box-sizing: border-box;
-
    z-index: 0;
    position: relative;
 }
-
 .progressbar_container {
    top: 50%;
    left: 50%;
@@ -474,39 +443,32 @@ section {
    text-align: center;
    box-sizing: border-box;
    transform: translate(-50%, -50%);
-
    gap: 43px;
    display: flex;
    align-items: center;
    flex-direction: column;
    justify-content: center;
-
    position: relative;
 }
-
 #step1,
 #step3,
 #step5 {
    border-radius: 10px 10px 0 0;
    text-shadow: 0 2px 3px rgb(75, 75, 75);
 }
-
 #step2,
 #step4 {
    border-radius: 0 0 10px 10px;
    text-shadow: 0 2px 3px rgb(75, 75, 75);
 }
-
 .number_top,
 .number_bottom {
    width: 99%;
    height: 50px;
-
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
-
 .number_top p,
 .number_bottom p {
    width: 100%;
@@ -516,12 +478,10 @@ section {
    text-align: center;
    box-sizing: border-box;
    font-family: "Montserrat", sans-serif;
-
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .progressbar_content {
    top: 50%;
    left: 50%;
@@ -529,14 +489,11 @@ section {
    height: fit-content;
    box-sizing: border-box;
    transform: translate(-50%, -50%);
-
    display: flex;
    align-items: center;
    justify-content: space-between;
-
    position: absolute;
 }
-
 .progressbar_content div {
    width: 25px;
    height: 25px;
@@ -545,12 +502,10 @@ section {
    border-radius: 50%;
    transition: all 0.5s;
    border: 2px solid white;
-
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .prog1:hover,
 .prog2:hover,
 .prog3:hover,
@@ -564,13 +519,11 @@ section {
    outline: 1px solid gold;
    background-color: rgba(255, 255, 255);
 }
-
 .divider {
    flex-grow: 1;
    box-sizing: border-box;
    border-top: 2px solid white;
 }
-
 .step_cards {
    top: 50%;
    left: 50%;
@@ -578,18 +531,14 @@ section {
    width: fit-content;
    height: fit-content;
    transform: translate(-50%, -50%);
-
    display: flex;
    align-items: center;
    justify-content: center;
-
    background-color: black;
    border: 1px solid white;
-
    z-index: 1;
    position: absolute;
 }
-
 .content1,
 .content2,
 .content3,
@@ -602,35 +551,28 @@ section {
    flex-flow: row nowrap;
    background-color: #ffb03ab4;
 }
-
 .left {
    width: 60%;
    padding: 30px;
 }
-
 .left p {
    text-indent: 10%;
    font-size: 18px;
 }
-
 .left h1 {
    font-size: 40px;
 }
-
 .left h1,
 p {
    margin: 10px;
 }
-
 .right {
    width: 40%;
    background-size: cover;
    background-image: url(../photos/documents.jpg);
-
    display: flex;
    justify-content: end;
 }
-
 .right i {
    width: 35px;
    height: 35px;
@@ -641,18 +583,15 @@ p {
    transition: all 0.35s;
    background-color: white;
    border: 2px solid goldenrod;
-
    display: flex;
    align-items: center;
    justify-content: center;
 }
-
 .right i:hover {
    color: goldenrod;
    transition: all 0.35s;
    border: 2px solid teal;
 }
-
 /* SECTION RESPONSIVE DESIGN [ START ]*/
 @media only screen and (max-width: 600px) {
    .title_image {
@@ -660,7 +599,6 @@ p {
       height: 300px;
       position: relative;
    }
-
    .title_image img {
       opacity: 0.8;
       width: 100%;
@@ -671,7 +609,6 @@ p {
       align-items: center;
       justify-content: center;
    }
-
    .title_image h1 {
       width: 100%;
       margin: 0;
@@ -686,7 +623,6 @@ p {
       align-items: center;
       justify-content: end;
    }
-
    .content {
       width: auto;
       height: auto;
@@ -696,7 +632,6 @@ p {
       flex-flow: column nowrap;
       margin: 30px 0;
    }
-
    .content_title {
       width: auto;
       height: auto;
@@ -705,7 +640,6 @@ p {
       align-items: center;
       justify-content: start;
    }
-
    .content_title h2 {
       text-align: center;
       margin: 0;
@@ -719,19 +653,16 @@ p {
       align-items: center;
       justify-content: start;
    }
-
    .content_description {
       width: auto;
       padding: 0 20px;
    }
-
    .content_description p {
       font-size: 18px;
       text-indent: 10%;
       font-weight: lighter;
       font-family: Georgia, 'Times New Roman', Times, serif;
    }
-
    .how_to_content {
       width: auto;
       padding: 20px 0;
@@ -743,7 +674,6 @@ p {
       flex-direction: column;
       justify-content: space-between;
    }
-
    .steps_title {
       width: auto;
       height: auto;
@@ -754,7 +684,6 @@ p {
       flex-direction: column;
       justify-content: center;
    }
-
    .steps_title h1 {
       margin: 0;
       width: auto;
@@ -765,7 +694,6 @@ p {
       align-items: center;
       justify-content: center;
    }
-
    .steps_title h2 {
       margin: 0;
       width: auto;
@@ -782,7 +710,6 @@ p {
       align-items: center;
       justify-content: center;
    }
-
    .steps_container {
       width: auto;
       margin-left: 0;
@@ -793,7 +720,6 @@ p {
       flex-direction: column;
       justify-content: space-evenly;
    }
-
    .steps_odd {
       width: 100%;
       display: flex;
@@ -801,7 +727,6 @@ p {
       display: flex;
       align-items: center;
    }
-
    .steps_odd h1 {
       margin: 0;
       width: 50px;
@@ -814,7 +739,6 @@ p {
       align-items: center;
       justify-content: center;
    }
-
    .steps_odd p {
       margin: 0;
       width: 70%;
@@ -827,7 +751,6 @@ p {
       font-family: "Montserrat", sans-serif;
       background-color: rgba(129, 129, 129, 0.2);
    }
-
    .steps_even {
       width: 100%;
       display: flex;
@@ -836,7 +759,6 @@ p {
       align-items: center;
       justify-content: end;
    }
-
    .steps_even h1 {
       margin: 0;
       width: 50px;
@@ -849,7 +771,6 @@ p {
       align-items: center;
       justify-content: center;
    }
-
    .steps_even p {
       margin: 0;
       width: 70%;
@@ -863,7 +784,6 @@ p {
       font-family: "Montserrat", sans-serif;
       background-color: rgba(129, 129, 129, 0.2);
    }
-
    .timeline {
       width: auto;
       height: auto;
@@ -873,29 +793,24 @@ p {
       flex-direction: column;
       justify-content: center;
    }
-
    .timeline_content {
       width: 100%;
       height: 575px;
       background-size: cover;
       background-position: center;
       background-image: url(../photos/takeoff.jpg);
-
       display: flex;
       align-items: center;
       flex-flow: column nowrap;
       justify-content: flex-start;
    }
-
    .timeline_title {
       width: auto;
       height: fit-content;
-
       display: flex;
       align-items: center;
       justify-content: center;
    }
-
    .timeline_title h1 {
       text-align: center;
       width: 100%;
@@ -905,7 +820,6 @@ p {
       height: fit-content;
       letter-spacing: 5px;
       font-family: Georgia, "Times New Roman", Times, serif;
-
       background-clip: text;
       background-image: linear-gradient(60deg,
             rgb(255, 255, 255),
@@ -917,21 +831,17 @@ p {
             rgb(255, 217, 0));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-
       display: flex;
       align-items: center;
       justify-content: center;
    }
-
    .timeline_container {
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-
       z-index: 0;
       position: relative;
    }
-
    .progressbar_container {
       top: 50%;
       left: 50%;
@@ -942,39 +852,32 @@ p {
       text-align: center;
       box-sizing: border-box;
       transform: translate(-50%, -50%);
-
       gap: 43px;
       display: flex;
       align-items: center;
       flex-direction: column;
       justify-content: center;
-
       position: relative;
    }
-
    #step1,
    #step3,
    #step5 {
       border-radius: 10px 10px 0 0;
       text-shadow: 0 2px 3px rgb(75, 75, 75);
    }
-
    #step2,
    #step4 {
       border-radius: 0 0 10px 10px;
       text-shadow: 0 2px 3px rgb(75, 75, 75);
    }
-
    .number_top,
    .number_bottom {
       width: 99%;
       height: 50px;
-
       display: flex;
       align-items: center;
       justify-content: space-between;
    }
-
    .number_top p,
    .number_bottom p {
       width: 100%;
@@ -984,12 +887,10 @@ p {
       text-align: center;
       box-sizing: border-box;
       font-family: "Montserrat", sans-serif;
-
       display: flex;
       align-items: center;
       justify-content: center;
    }
-
    .progressbar_content {
       top: 50%;
       left: 50%;
@@ -997,14 +898,11 @@ p {
       height: fit-content;
       box-sizing: border-box;
       transform: translate(-50%, -50%);
-
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       position: absolute;
    }
-
    .progressbar_content div {
       width: 25px;
       height: 25px;
@@ -1013,12 +911,10 @@ p {
       border-radius: 50%;
       transition: all 0.5s;
       border: 2px solid white;
-
       display: flex;
       align-items: center;
       justify-content: center;
    }
-
    .prog1:hover,
    .prog2:hover,
    .prog3:hover,
@@ -1032,13 +928,11 @@ p {
       outline: 1px solid gold;
       background-color: rgba(255, 255, 255);
    }
-
    .divider {
       flex-grow: 1;
       box-sizing: border-box;
       border-top: 2px solid white;
    }
-
    .step_cards {
       top: 50%;
       left: 50%;
@@ -1046,18 +940,14 @@ p {
       width: fit-content;
       height: fit-content;
       transform: translate(-50%, -50%);
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       background-color: black;
       border: 1px solid white;
-
       z-index: 1;
       position: absolute;
    }
-
    .content1,
    .content2,
    .content3,
@@ -1070,35 +960,28 @@ p {
       flex-flow: row nowrap;
       background-color: #ffb03ab4;
    }
-
    .left {
       width: 60%;
       padding: 30px;
    }
-
    .left p {
       text-indent: 10%;
       font-size: 18px;
    }
-
    .left h1 {
       font-size: 40px;
    }
-
    .left h1,
    p {
       margin: 10px;
    }
-
    .right {
       width: 40%;
       background-size: cover;
       background-image: url(../photos/documents.jpg);
-
       display: flex;
       justify-content: end;
    }
-
    .right i {
       width: 35px;
       height: 35px;
@@ -1109,28 +992,21 @@ p {
       transition: all 0.35s;
       background-color: white;
       border: 2px solid goldenrod;
-
       display: flex;
       align-items: center;
       justify-content: center;
    }
-
    .right i:hover {
       color: goldenrod;
       transition: all 0.35s;
       border: 2px solid teal;
    }
 }
-
 /* SECTION RESPONSIVE DESIGN [ START ]*/
-
 /* SECTION DESIGN [ END ] */
 
 
-
-
 /* FOOTER BAR SECTION [ START ] */
-
 /* FOOTER BAR DESKTOP DESIGN [ START ] */
 footer {
    clear: both;
@@ -1143,7 +1019,6 @@ footer {
    background-position-y: -100px;
    background-image: url(../photos/silk.jpg);
 }
-
 .footer_container {
    width: 100%;
    height: 220px;
@@ -1152,7 +1027,6 @@ footer {
    display: flex;
    align-items: center;
 }
-
 .logo_container {
    width: 30%;
    height: 100%;
@@ -1161,7 +1035,6 @@ footer {
    flex-direction: column;
    justify-content: space-evenly;
 }
-
 .logo_container a {
    width: 100%;
    margin-top: 15px;
@@ -1170,16 +1043,13 @@ footer {
    display: flex;
    justify-content: center;
 }
-
 .logo_container a:hover {
    opacity: 0.7;
    transition: 0.5s;
 }
-
 .logo_container img {
    width: 90%;
 }
-
 .logo_container p {
    width: 100%;
    font-size: 12px;
@@ -1190,7 +1060,6 @@ footer {
    color: rgb(48, 93, 98);
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .contact_info {
    width: 20%;
    height: 80%;
@@ -1199,7 +1068,6 @@ footer {
    flex-direction: column;
    justify-content: space-around;
 }
-
 .contact_info h4 {
    margin: 0;
    font-size: 13px;
@@ -1207,12 +1075,10 @@ footer {
    color: rgb(201, 169, 43);
    font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 .contact_info h4 a {
    color: rgb(201, 169, 43);
    text-decoration: none;
 }
-
 .contact_info p {
    margin: 0;
    font-size: 12px;
@@ -1220,11 +1086,9 @@ footer {
    color: rgb(48, 93, 98);
    font-family: "Montserrat", sans-serif;
 }
-
 .contact_info p:hover {
    text-decoration: underline;
 }
-
 .about_links {
    width: 15%;
    height: 75%;
@@ -1233,7 +1097,6 @@ footer {
    flex-direction: column;
    justify-content: center;
 }
-
 .about_title {
    margin: 0;
    padding: 5px 0;
@@ -1245,7 +1108,6 @@ footer {
    display: flex;
    align-items: center;
 }
-
 .about_links_container {
    width: 100%;
    height: fit-content;
@@ -1254,7 +1116,6 @@ footer {
    flex-direction: column;
    justify-content: space-evenly;
 }
-
 .company_links {
    font-size: 15px;
    text-indent: 10px;
@@ -1262,11 +1123,9 @@ footer {
    color: rgb(48, 93, 98);
    font-family: "Montserrat", sans-serif;
 }
-
 .company_links:hover {
    text-decoration: underline;
 }
-
 .socials {
    width: 20%;
    height: inherit;
@@ -1274,7 +1133,6 @@ footer {
    align-items: center;
    justify-content: start;
 }
-
 .socials-container {
    width: 100%;
    padding: 10px 0 10px 0;
@@ -1282,7 +1140,6 @@ footer {
    align-items: center;
    justify-content: space-evenly;
 }
-
 .socials-container a,
 button {
    padding: 5px;
@@ -1293,30 +1150,24 @@ button {
    text-decoration: none;
    transition: 0.25s;
 }
-
 .email_button button {
    font-size: 25px;
    color: goldenrod;
    background-color: transparent;
 }
-
 #socialButton1:hover {
    color: blue;
    transition: 0.25s;
 }
-
 #socialButton2:hover {
    color: fuchsia;
    transition: 0.25s;
 }
-
 #socialButton3:hover {
    color: orange;
    transition: 0.25s;
 }
-
 /* FOOTER BAR DESKTOP DESIGN [ START ] */
-
 /* RESPONSIVE FOOTER BAR DESIGN [ START ] */
 @media only screen and (max-width: 600px) {
    footer {
@@ -1330,7 +1181,6 @@ button {
       background-position-y: 0;
       background-image: url(photos/silk.jpg);
    }
-
    .footer_container {
       width: 100%;
       height: fit-content;
@@ -1340,7 +1190,6 @@ button {
       flex-flow: column nowrap;
       align-items: center;
    }
-
    .logo_container {
       width: 100%;
       height: 100%;
@@ -1348,7 +1197,6 @@ button {
       box-sizing: border-box;
       gap: 10px;
    }
-
    .logo_container p {
       width: 100%;
       font-size: 12px;
@@ -1358,7 +1206,6 @@ button {
       color: rgb(48, 93, 98);
       font-family: Georgia, 'Times New Roman', Times, serif;
    }
-
    .contact_info {
       width: 100%;
       height: fit-content;
@@ -1368,7 +1215,6 @@ button {
       flex-direction: column;
       justify-content: space-around;
    }
-
    .about_links {
       width: fit-content;
       height: fit-content;
@@ -1379,7 +1225,6 @@ button {
       align-items: center;
       text-align: center;
    }
-
    .about_title {
       margin: 0;
       padding: 5px 0;
@@ -1391,7 +1236,6 @@ button {
       display: flex;
       align-items: center;
    }
-
    .company_links {
       font-size: 15px;
       text-indent: 0;
@@ -1399,7 +1243,6 @@ button {
       color: rgb(48, 93, 98);
       font-family: "Montserrat", sans-serif;
    }
-
    .socials {
       width: 100%;
       height: inherit;
@@ -1408,7 +1251,5 @@ button {
       justify-content: center;
    }
 }
-
 /* RESPONSIVE FOOTER BAR DESIGN [ END ] */
-
 /* FOOTER BAR SECTION [ END ] */
