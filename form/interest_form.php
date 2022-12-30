@@ -74,7 +74,7 @@
       <!-- LOGO SECTION [ START ] -->
       <div class="logo_holder">
          <a class="nav_logo" href="https://westmigrationagency.com/">
-            <img src="../photos/wma-logo.png" />
+            <img src="../photos/wmc_logo.png" />
          </a>
       </div>
       <!-- LOGO SECTION [ START ] -->
