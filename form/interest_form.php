@@ -73,7 +73,7 @@
 
       <!-- LOGO SECTION [ START ] -->
       <div class="logo_holder">
-         <a class="nav_logo" href="https://westmigrationagency.com/">
+         <a class="nav_logo" href="https://westmigrationconsultancy.com/">
             <img src="../photos/wmc_logo.png" />
          </a>
       </div>
