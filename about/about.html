@@ -82,6 +82,7 @@
 					<p class="company_description">
 						WMA will help you organize the program you are interested in and <b>find a suitable program applicable to you</b>. We understand the drive and self-investment required to take this big step as we play an essential role in advising and corresponding with applicants on various topics, including requirements at various stages, relevant documentation, and adjustments needed to have a pleasant experience living and working in the United States. We believe great mentors affect and bring out great leaders in the future. <b>We want to make a difference in people's lives</b> by streamlining the complex process and navigating the ever-evolving world of international programs.
 					</p>
+					<label id="mission_start"></label>
 				</div>
 			</div>
 		</div>
@@ -103,7 +104,7 @@
 		</div>
 
 		<div class="values_container">
-			<div class="values">
+			<div class="values" id="values">
 				<div class="values_left">
 					<p>
 						At West Migration Agency, our <b>diverse culture</b> drives our success, and we empower clients to pursue their dreams and seize opportunities.
@@ -111,14 +112,15 @@
 					<p>
 						"WMA" was created with a solid belief in <b>professional growth</b> and the pursuit of different career paths. The United States is a leader in global innovation and therefore offers wonderful opportunities for those with relevant experience. Moreover, the US has one of the highest standards of living among developed countries and is the largest economy in the world. <b>We invite you to</b> contact us to see if we can help you achieve your goals and dreams of a better future. 
 					</p>
+					<label id="specialization_start"></label>
 				</div>
 				<div class="values_right">
 					<p>Our Values</p>
 				</div>
 			</div>
 		</div>
-
-		<div class="specialization">
+	
+		<div class="specialization" id="specialization">
 			<div class="special_navbar">
 				<div class="spec_left">
 					<h1>Specialization</h1>
@@ -671,13 +673,15 @@
 		</div>
 		<!-- CONTENT END -->
 
+   <!-- ------------------------------------- -->
+
    <!-- FOOTER BAR SECTION [START] -->
    <footer>
       <div class="footer_container">
 
          <!-- LOGO SECTION [ START ] -->
          <div class="logo_container">
-            <a href="../">
+            <a href="https://westmigrationconsultancy.com/">
                <img src="../photos/wmc_logo.png" />
             </a>
             <p>© 2023 West Migration Agency All Rights Reserved</p>
@@ -689,22 +693,17 @@
 
          <!-- CONTACTS SECTION [ START ] -->
          <div class="contact_info">
-            <div>
-               <h4>Address</h4>
-               <p>3400 Cottage Way STE. G2 #11495 <br />Sacramento, CA 95825</p>
+            <div class="contact_info_left">
+               <i id="icon1" class="fa-solid fa-location-dot"></i>
+               <i class="fa-solid fa-envelope"></i>
+               <i class="fa-solid fa-phone"></i>
+               <i class="fa-solid fa-link"></i>
             </div>
-            <div>
-               <h4>E-Mail Address</h4>
-               <p>admin@westmigrationagency.us</p>
-            </div>
-            <div>
-               <h4>Phone</h4>
-               <p>415-633-6865</p>
-            </div>
-            <div>
-               <h4>
-                  <a href="admin/login/login.php">ADMIN</a>
-               </h4>
+            <div class="contact_info_right">
+               <p class="address">3400 Cottage Way STE. G2 #11495 Sacramento, CA 95825</p>
+               <p class="e-mail">admin@westmigrationagency.us</p>
+               <p class="phone">415-633-6865</p>
+               <a href="admin/login/login.php">ADMIN</a>
             </div>
          </div>
          <!-- CONTACTS SECTION [ END ] -->
@@ -713,17 +712,29 @@
          <div class="about_links">
             <h3 class="about_title">About Us</h3>
             <div class="about_links_container">
-               <a class="company_links" href="">Our Company</a>
-               <a class="company_links" href="">Our Specializations</a>
-               <a class="company_links" href="">Visa Categories</a>
+               <a class="company_links" href="about/about.html">
+                  Our Company
+               </a>
+               <a class="company_links" href="about/about.html#mission_start">
+                  Our Mission
+               </a>
+               <a class="company_links" href="about/about.html#specialization_start">
+                  Our Specializations
+               </a>
             </div>
          </div>
          <div class="about_links">
             <h3 class="about_title">Processes</h3>
             <div class="about_links_container">
-               <a class="company_links" href="">Consultation Process</a>
-               <a class="company_links" href="">Timeline of Application</a>
-               <a class="company_links" href="">Visa Categories</a>
+               <a class="company_links" href="process/process.html">
+                  Consultation Process
+               </a>
+               <a class="company_links" href="process/process.html#timeline_start">
+                  Timeline of Application
+               </a>
+               <a class="company_links" href="process/process.html#howto_start">
+                  How-To Apply
+               </a>
             </div>
          </div>
          <!-- PAGE SECTION LINKS [ START ] -->
@@ -749,7 +760,6 @@
             </div>
          </div>
          <!-- SOCIAL MEDIA LINK SECTION [ END ] -->
-
       </div>
    </footer>
    <!-- FOOTER BAR SECTION [END] -->
